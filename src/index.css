@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  :root[data-theme="light"] {
+    /* Page & Layout */
+    --color-page-bg: #cadcf0;
+    --color-page-bg-gradient: radial-gradient(circle at 10% 20%, #e2eef9 0%, #b8d4ed 100%);
+    --color-page-blob: rgba(255, 255, 255, 0.4);
+    
+    /* Sidebar */
+    --color-sidebar-bg: rgba(222, 237, 248, 0.85);
+    --color-sidebar-border: #b8d4ec;
+    --color-sidebar-shadow: rgba(45, 85, 125, 0.08);
+    
+    /* Navigation */
+    --color-nav-active-bg: #29607a;
+    --color-nav-active-text: #ffffff;
+    --color-nav-text: #53697e;
+    --color-nav-hover-bg: rgba(41, 96, 122, 0.12);
+    --color-nav-hover-text: #1d3e52;
+    
+    /* Content Window Card */
+    --color-window-bg: #eef6fc;
+    --color-window-border: #c0daf0;
+    --color-window-shadow: rgba(50, 95, 140, 0.15);
+    --color-window-header-accent: #258cb5;
+    
+    /* Content Elements & Typography */
+    --color-text-primary: #192938;
+    --color-text-secondary: #586c80;
+    --color-text-muted: #7e94a8;
+    --color-accent: #1e8cb8;
+    --color-accent-light: #d6effc;
+    --color-accent-glow: rgba(30, 140, 184, 0.35);
+    
+    /* Inner Cards (e.g. Certifications) */
+    --color-card-bg: #e2f0fb;
+    --color-card-border: #c4def4;
+    --color-card-hover-border: #1e8cb8;
+    
+    /* Popups & Dropdowns */
+    --color-popup-bg: #d0e4f5;
+    --color-popup-border: #b5d5ee;
+    --color-popup-hover: #bddbf2;
+    --color-popup-active: #29607a;
+    --color-popup-active-text: #ffffff;
+    
+    /* Toolbar & Buttons */
+    --color-toolbar-icon: #5a738c;
+    --color-toolbar-icon-hover: #1e8cb8;
+    
+    /* Scrollbar */
+    --color-scrollbar-thumb: #9fc1de;
+    --color-scrollbar-track: transparent;
+  }
+
+  :root[data-theme="dark"] {
+    /* Page & Layout */
+    --color-page-bg: #0b1320;
+    --color-page-bg-gradient: radial-gradient(circle at 10% 20%, #152238 0%, #070c14 100%);
+    --color-page-blob: rgba(30, 58, 138, 0.2);
+    
+    /* Sidebar */
+    --color-sidebar-bg: rgba(21, 34, 56, 0.88);
+    --color-sidebar-border: #263c60;
+    --color-sidebar-shadow: rgba(0, 0, 0, 0.4);
+    
+    /* Navigation */
+    --color-nav-active-bg: #0284c7;
+    --color-nav-active-text: #ffffff;
+    --color-nav-text: #94a3b8;
+    --color-nav-hover-bg: rgba(2, 132, 199, 0.15);
+    --color-nav-hover-text: #e2e8f0;
+    
+    /* Content Window Card */
+    --color-window-bg: #121c2e;
+    --color-window-border: #223654;
+    --color-window-shadow: rgba(0, 0, 0, 0.5);
+    --color-window-header-accent: #38bdf8;
+    
+    /* Content Elements & Typography */
+    --color-text-primary: #f1f5f9;
+    --color-text-secondary: #94a3b8;
+    --color-text-muted: #64748b;
+    --color-accent: #38bdf8;
+    --color-accent-light: rgba(56, 189, 248, 0.15);
+    --color-accent-glow: rgba(56, 189, 248, 0.4);
+    
+    /* Inner Cards */
+    --color-card-bg: #18253b;
+    --color-card-border: #283e63;
+    --color-card-hover-border: #38bdf8;
+    
+    /* Popups & Dropdowns */
+    --color-popup-bg: #19273f;
+    --color-popup-border: #2c446d;
+    --color-popup-hover: #223656;
+    --color-popup-active: #0284c7;
+    --color-popup-active-text: #ffffff;
+    
+    /* Toolbar & Buttons */
+    --color-toolbar-icon: #8da4be;
+    --color-toolbar-icon-hover: #38bdf8;
+    
+    /* Scrollbar */
+    --color-scrollbar-thumb: #334d73;
+    --color-scrollbar-track: transparent;
+  }
+
+  :root[data-theme="midnight"] {
+    /* Page & Layout */
+    --color-page-bg: #03060d;
+    --color-page-bg-gradient: radial-gradient(circle at 10% 20%, #0d1627 0%, #020409 100%);
+    --color-page-blob: rgba(6, 182, 212, 0.12);
+    
+    /* Sidebar */
+    --color-sidebar-bg: rgba(10, 16, 29, 0.92);
+    --color-sidebar-border: #1a2742;
+    --color-sidebar-shadow: rgba(0, 0, 0, 0.6);
+    
+    /* Navigation */
+    --color-nav-active-bg: #06b6d4;
+    --color-nav-active-text: #020617;
+    --color-nav-text: #8ea0b8;
+    --color-nav-hover-bg: rgba(6, 182, 212, 0.15);
+    --color-nav-hover-text: #22d3ee;
+    
+    /* Content Window Card */
+    --color-window-bg: #070d18;
+    --color-window-border: #18243c;
+    --color-window-shadow: rgba(0, 0, 0, 0.7);
+    --color-window-header-accent: #00f2fe;
+    
+    /* Content Elements & Typography */
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #8c9eb5;
+    --color-text-muted: #576b85;
+    --color-accent: #00f2fe;
+    --color-accent-light: rgba(0, 242, 254, 0.12);
+    --color-accent-glow: rgba(0, 242, 254, 0.45);
+    
+    /* Inner Cards */
+    --color-card-bg: #0d1626;
+    --color-card-border: #1c2b48;
+    --color-card-hover-border: #00f2fe;
+    
+    /* Popups & Dropdowns */
+    --color-popup-bg: #101a2d;
+    --color-popup-border: #223456;
+    --color-popup-hover: #182642;
+    --color-popup-active: #06b6d4;
+    --color-popup-active-text: #020617;
+    
+    /* Toolbar & Buttons */
+    --color-toolbar-icon: #7d93b0;
+    --color-toolbar-icon-hover: #00f2fe;
+    
+    /* Scrollbar */
+    --color-scrollbar-thumb: #233758;
+    --color-scrollbar-track: transparent;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color-page-bg);
+  background-image: var(--color-page-bg-gradient);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', 'Rajdhani', sans-serif;
+}
+
+.font-chakra {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+}
+
+/* Custom internal scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar-thumb);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
+}
+
+/* Backdrop Blur and Glow effects */
+.glass-panel {
+  background: var(--color-sidebar-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-sidebar-border);
+  box-shadow: 0 12px 32px var(--color-sidebar-shadow);
+}
+
+.window-panel {
+  background: var(--color-window-bg);
+  border: 1px solid var(--color-window-border);
+  box-shadow: 0 16px 40px var(--color-window-shadow);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pulse keyframes for avatar dot */
+@keyframes online-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+.animate-online-pulse {
+  animation: online-pulse 2s infinite ease-in-out;
+}
