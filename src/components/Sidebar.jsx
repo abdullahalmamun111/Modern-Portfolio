@@ -56,12 +56,16 @@ export default function Sidebar({
     { id: 'contact', label: t.nav.contact, icon: SquarePen }
   ];
 
-  // Handle Resume Download
+  // Handle Resume Download (Guaranteed Trigger)
   const handleDownloadResume = () => {
     showToast(t.actions.resumeDownloading);
+
+    const pdfUrl = '/MD_ABDULLA_MIA_CV.pdf';
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Abdullah_Al_Mamun_Resume.pdf';
+    link.href = pdfUrl;
+    link.setAttribute('download', 'MD_ABDULLA_MIA_CV.pdf');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -117,7 +121,7 @@ export default function Sidebar({
         !isMobile ? (isCollapsed ? 'w-20 px-2.5 py-6' : 'w-64 xl:w-72 px-5 py-6') : ''
       } h-full shrink-0 shadow-lg`}
     >
-      {/* Desktop Collapse/Expand Toggle Tab on Right Edge matching Image 1 & 2 */}
+      {/* Desktop Collapse/Expand Toggle Tab */}
       {!isMobile && (
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
@@ -128,7 +132,7 @@ export default function Sidebar({
         </button>
       )}
 
-      {/* Mobile Close Button in Drawer Header */}
+      {/* Mobile Close Button */}
       {isMobile && (
         <div className="flex items-center justify-between pb-3 mb-2 border-b border-[var(--color-sidebar-border)]/60">
           <span className="font-chakra font-bold text-sm text-[var(--color-text-primary)]">
@@ -145,12 +149,18 @@ export default function Sidebar({
 
       {/* TOP SECTION: Avatar & Profile Info */}
       <div className="flex flex-col items-center text-center">
-        {/* Profile Avatar */}
-        <div className="transition-all duration-300 mb-3">
-          <AvatarPortrait className={isCollapsed && !isMobile ? 'w-12 h-12 rounded-xl' : 'w-22 h-22 sm:w-24 sm:h-24'} />
+        {/* Profile Avatar (Bigger & Prominent Size) */}
+        <div className="transition-all duration-300 mb-3.5 flex items-center justify-center">
+          <AvatarPortrait 
+            className={
+              isCollapsed && !isMobile 
+                ? 'w-12 h-12 rounded-xl' 
+                : 'w-28 h-28 sm:w-32 sm:h-32 xl:w-36 xl:h-36 rounded-2xl shadow-md border-2 border-[var(--color-accent)]/20'
+            } 
+          />
         </div>
 
-        {/* Name & Audio Pronunciation Button */}
+        {/* Name & Audio Pronunciation */}
         {(!isCollapsed || isMobile) && (
           <div className="flex flex-col items-center animate-in fade-in duration-200">
             <div className="flex items-center space-x-1.5 font-bold text-base xl:text-lg tracking-tight">
@@ -163,16 +173,35 @@ export default function Sidebar({
               <AudioPronunciation name={`${t.name} ${t.surname}`} />
             </div>
 
-            {/* Subtitle / Role */}
-            <p className="text-[11.5px] font-medium text-[var(--color-text-secondary)] mt-0.5 tracking-wide">
-              {t.title}
-            </p>
+            {/* Subtitle / Animated Role Marquee */}
+            <div className="w-full max-w-[200px] xl:max-w-[220px] overflow-hidden mt-1.5 py-0.5 mask-marquee">
+              <div className="animate-marquee gap-2">
+                {[
+                  'Full Stack Developer',
+                  'Jr. Shopify Developer',
+                  'MERN Stack Developer',
+                  'React.js Specialist',
+                  'Liquid Theme Expert',
+                  'Full Stack Developer',
+                  'Jr. Shopify Developer',
+                  'MERN Stack Developer'
+                ].map((role, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-flex items-center text-[10.5px] font-semibold tracking-wide text-[var(--color-accent)] bg-[var(--color-window-bg)] px-2 py-0.5 rounded-full border border-[var(--color-card-border)] whitespace-nowrap shrink-0 shadow-xs"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] mr-1.5 animate-pulse" />
+                    {role}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>
 
       {/* MIDDLE SECTION: Navigation Menu */}
-      <nav className="my-4 flex flex-col space-y-1 overflow-y-auto custom-scrollbar max-h-[calc(100vh-280px)]">
+      <nav className="my-4 flex flex-col space-y-1 overflow-y-auto custom-scrollbar max-h-[calc(100vh-290px)]">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = activeSection === item.id;
@@ -201,10 +230,10 @@ export default function Sidebar({
         })}
       </nav>
 
-      {/* BOTTOM TOOLBAR: Language, Theme, Magic Cursor, Resume Download */}
+      {/* BOTTOM TOOLBAR */}
       <div className="relative pt-3 border-t border-[var(--color-sidebar-border)]/50">
         <div className={`flex items-center justify-between ${isCollapsed ? 'flex-col gap-2' : 'px-1'}`}>
-          {/* 1. Smart Language Switcher */}
+          {/* 1. Language Switcher */}
           <div className="relative">
             <button
               ref={langBtnRef}

@@ -237,3 +237,49 @@ body {
 .animate-online-pulse {
   animation: online-pulse 2s infinite ease-in-out;
 }
+
+/* Infinite Marquee Animation for Roles */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.mask-marquee {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+/* Section Slide-In Transition (right → center) */
+@keyframes section-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section-slide-in {
+  animation: section-slide-in 0.38s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+

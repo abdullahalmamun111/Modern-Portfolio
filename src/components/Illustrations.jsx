@@ -124,6 +124,14 @@ export function DataAnalystIllustration({ className = "w-44 h-44" }) {
  * Certification Avatars matching Image 1 & Image 2
  */
 export function CertAvatar({ type }) {
+  if (type === 'phero') {
+    return (
+      <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0 bg-white flex items-center justify-center p-0.5">
+        <img src="/phero.jpg" alt="Programming Hero" className="w-full h-full object-cover rounded-full" />
+      </div>
+    );
+  }
+
   if (type === 'avatar1') {
     // Male professional in suit (Power BI)
     return (
@@ -211,6 +219,52 @@ export function CertAvatar({ type }) {
           <rect x="62" y="37" width="7" height="3" /><rect x="85" y="37" width="7" height="3" />
         </g>
       </svg>
+    </div>
+  );
+}
+
+/**
+ * Custom Education Timeline Circular Avatar
+ */
+export function EducationAvatar({ type }) {
+  if (type === 'polytechnic') {
+    return (
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0 bg-[#064e3b] flex items-center justify-center text-white relative">
+        <svg viewBox="0 0 100 100" className="w-full h-full p-2">
+          <circle cx="50" cy="50" r="46" fill="#064e3b" stroke="#34d399" strokeWidth="2.5" />
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#6ee7b7" strokeWidth="1" strokeDasharray="3 2" />
+          <path d="M 50 24 L 76 36 L 50 48 L 24 36 Z" fill="#38bdf8" />
+          <path d="M 33 41 L 33 55 Q 50 63 67 55 L 67 41" fill="none" stroke="#38bdf8" strokeWidth="2.5" strokeLinecap="round" />
+          <line x1="72" y1="38" x2="72" y2="58" stroke="#fcd34d" strokeWidth="2" />
+          <circle cx="72" cy="60" r="2.5" fill="#fcd34d" />
+          <path d="M 32 68 Q 50 63 50 78 Q 50 63 68 68 L 68 82 Q 50 77 50 88 Q 50 77 32 82 Z" fill="#ffffff" />
+          <line x1="50" y1="64" x2="50" y2="88" stroke="#064e3b" strokeWidth="2" />
+        </svg>
+      </div>
+    );
+  }
+
+  if (type === 'school') {
+    return (
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0 bg-[#082f49] flex items-center justify-center text-white relative">
+        <svg viewBox="0 0 100 100" className="w-full h-full p-2">
+          <circle cx="50" cy="50" r="46" fill="#082f49" stroke="#38bdf8" strokeWidth="2.5" />
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#7dd3fc" strokeWidth="1" strokeDasharray="3 2" />
+          <path d="M 50 20 L 54 34 L 46 34 Z" fill="#f59e0b" />
+          <path d="M 50 16 Q 55 23 50 27 Q 45 23 50 16 Z" fill="#ef4444" />
+          <rect x="47" y="34" width="6" height="18" fill="#d97706" rx="1.5" />
+          <path d="M 28 58 Q 50 52 50 68 Q 50 52 72 58 L 72 75 Q 50 69 50 82 Q 50 69 28 75 Z" fill="#ffffff" />
+          <line x1="50" y1="54" x2="50" y2="82" stroke="#082f49" strokeWidth="2" />
+          <path d="M 22 50 Q 20 72 32 84" fill="none" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round" />
+          <path d="M 78 50 Q 80 72 68 84" fill="none" stroke="#fbbf24" strokeWidth="2.5" strokeLinecap="round" />
+        </svg>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-white/80 shadow-md shrink-0">
+      <CertAvatar type={type} />
     </div>
   );
 }

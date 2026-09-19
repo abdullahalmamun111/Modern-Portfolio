@@ -5,8 +5,8 @@ export const translations = {
     greeting: "Hi there...",
     name: "Abdullah",
     surname: "Al Mamun",
-    title: "Future Data Scientist",
-    badgeRole: "Data Analyst & Developer",
+    title: "MERN Stack Developer",
+    badgeRole: "Jr. Shopify Developer & MERN Stack Dev",
     location: "Dhaka, Bangladesh",
     email: "almamun6027@gmail.com",
     linkedin: "LinkedIn",
@@ -22,14 +22,14 @@ export const translations = {
       portfolio: "Portfolio",
       services: "Services",
       updates: "Updates",
-      contact: "Contact"
+      contact: "Contact",
     },
     aboutSection: {
-      taglinePrefix: "A little bit",
-      taglineHighlight: "about me...",
-      p1: "I'm <strong class='font-bold text-[var(--color-text-primary)]'>Abdullah Al Mamun</strong>, a <a href='#analytics' class='text-[var(--color-accent)] font-medium hover:underline'>Data Analyst & Developer</a> equipped with a solid foundation in statistics, data structures & programming languages like <strong class='font-bold text-[var(--color-text-primary)]'>Python & SQL</strong>. Proficient in data analysis, data cleaning and visualization using tools such as <strong class='font-bold text-[var(--color-text-primary)]'>Excel & Power BI</strong>. Demonstrated ability to extract insights from academic projects involving real-world datasets & predictive modeling using libraries like Pandas, NumPy & Matplotlib.",
-      p2: "Strong problem-solving skills, attention to detail, and a keen interest in uncovering trends & patterns to support data-driven decision-making. Eager to contribute to a dynamic team and grow in the field of analytics and modern web development.",
-      p3: "I look forward to collaborating <strong class='font-bold text-[var(--color-text-primary)]'>with you!</strong>"
+      taglinePrefix: "A Passionate",
+      taglineHighlight: "Full Stack & Jr. Shopify Developer",
+      p1: "Hi! I'm Abdullah Al Mamun, a passionate Full Stack & Jr. Shopify Developer with 8.5+ months of hands-on experience in Shopify store development, custom Liquid theming, storefront redesign, and MERN stack engineering. I have successfully completed my Diploma in Engineering in Computer Science and Technology from Dinajpur Polytechnic Institute.",
+      p2: "I specialize in customizing storefronts, product & collection pages, navigation, and cart functionality while delivering responsive, user-friendly e-commerce experiences. Alongside the Shopify ecosystem, I build modern, scalable full-stack web applications using React.js, Node.js, Express, and MongoDB. I love solving frontend challenges, optimizing UI/UX, and turning creative ideas into impactful digital products.",
+      p3: "I look forward to collaborating and bringing value to your next project!",
     },
     certSection: {
       titlePrefix: "My",
@@ -37,45 +37,74 @@ export const translations = {
       certs: [
         {
           id: 1,
-          titlePrefix: "Python",
-          titleSuffix: "for Beginners",
-          issuer: "Earned Python certification from MySirG.com, showcasing proficiency in programming, problem-solving, and real-world application development.",
-          date: "Jan 2025",
-          badgeType: "avatar2"
+          titlePrefix: "Complete Web",
+          titleSuffix: "Development",
+          issuer:
+            "Completed the Complete Web Development course from Programming Hero in 2024, covering HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and full-stack development concepts.",
+          date: "2024",
+          badgeType: "phero",
+          hasFile: true,
+          certFile: "/certificate-web-development.jpg",
+          certImage: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          issuerName: "Programming Hero",
         },
         {
           id: 2,
-          titlePrefix: "Data Analysis",
-          titleSuffix: "with Python",
-          issuer: "Completed Data Analysis with Python certification from IBM, demonstrating data cleaning, visualization, and analysis skills.",
-          date: "Jan 2026",
-          badgeType: "ibm"
+          titlePrefix: "Python",
+          titleSuffix: "for Beginners",
+          issuer:
+            "Earned Python certification from MySirG.com, showcasing proficiency in programming, problem-solving, and real-world application development.",
+          date: "Jan 2025",
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "MySirG.com",
         },
         {
           id: 3,
-          titlePrefix: "Data Visualization",
+          titlePrefix: "Data Analysis",
           titleSuffix: "with Python",
-          issuer: "Completed Data Visualization with Python certification from IBM, demonstrating strong skills in charts, dashboards, and storytelling.",
-          date: "Dec 2025",
-          badgeType: "ibm"
+          issuer:
+            "Completed Data Analysis with Python certification from IBM, demonstrating data cleaning, visualization, and analysis skills.",
+          date: "Jan 2026",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 4,
-          titlePrefix: "Power BI",
-          titleSuffix: "Specialist",
-          issuer: "Achieved Power BI certification from SkillCourse, demonstrating expertise in data visualization, reporting, and interactive dashboards.",
-          date: "Nov 2024",
-          badgeType: "avatar1"
+          titlePrefix: "Data Visualization",
+          titleSuffix: "with Python",
+          issuer:
+            "Completed Data Visualization with Python certification from IBM, demonstrating strong skills in charts, dashboards, and storytelling.",
+          date: "Dec 2025",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 5,
+          titlePrefix: "Power BI",
+          titleSuffix: "Specialist",
+          issuer:
+            "Achieved Power BI certification from SkillCourse, demonstrating expertise in data visualization, reporting, and interactive dashboards.",
+          date: "Nov 2024",
+          badgeType: "avatar1",
+          hasFile: false,
+          issuerName: "SkillCourse",
+        },
+        {
+          id: 6,
           titlePrefix: "SQL for",
           titleSuffix: "Data Science",
-          issuer: "Completed Advanced SQL relational database querying and indexing certification from University of California.",
+          issuer:
+            "Completed Advanced SQL relational database querying and indexing certification from University of California.",
           date: "Oct 2024",
-          badgeType: "avatar2"
-        }
-      ]
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "UC Davis",
+        },
+      ],
     },
     interestsSection: {
       titlePrefix: "Personal",
@@ -83,47 +112,47 @@ export const translations = {
       items: [
         {
           id: 1,
-          highlight: "Learning",
-          rest: "New Technologies",
-          desc: "Continuously learning Advanced tools and technologies in data field",
-          iconType: "searchChart"
+          highlight: "Building",
+          rest: "Web Applications",
+          desc: "Developing dynamic, scalable full-stack web applications using the MERN stack.",
+          iconType: "laptopCode",
         },
         {
           id: 2,
-          highlight: "Problem",
-          rest: "solving",
-          desc: "Solving complex problems using logical and analytical thinking.",
-          iconType: "laptopCode"
+          highlight: "Shopify",
+          rest: "Development",
+          desc: "Customizing Shopify themes, storefronts, and e-commerce experiences using Liquid, HTML, CSS & JS.",
+          iconType: "barChart",
         },
         {
           id: 3,
-          highlight: "Working",
-          rest: "with data",
-          desc: "Working with data to extract insights and meaningful patterns.",
-          iconType: "barChart"
+          highlight: "React.js",
+          rest: "& Frontend",
+          desc: "Building interactive, responsive UI with React.js, Tailwind CSS, and modern design systems.",
+          iconType: "searchChart",
         },
         {
           id: 4,
-          highlight: "Dashboard",
-          rest: "Designing",
-          desc: "Designing interactive dashboards for clear and effective data visualization.",
-          iconType: "pieChart"
+          highlight: "Problem",
+          rest: "Solving",
+          desc: "Solving complex programming challenges using logical and analytical thinking.",
+          iconType: "database",
         },
         {
           id: 5,
-          highlight: "Solving SQL",
-          rest: "challenges",
-          desc: "Practicing and solving SQL challenges to improve query skills.",
-          iconType: "database"
+          highlight: "Learning",
+          rest: "New Technologies",
+          desc: "Continuously exploring new tools, frameworks, and best practices in web development.",
+          iconType: "pieChart",
         },
         {
           id: 6,
           highlight: "Portfolio",
           rest: "Design",
-          desc: "Enjoy building modern portfolio highlighting projects and capabilities.",
-          iconType: "heart"
-        }
-      ]
+          desc: "Enjoy building modern, visually stunning portfolios that highlight projects and capabilities.",
+          iconType: "heart",
+        },
+      ],
     },
     languagesSection: {
       titlePrefix: "Languages",
@@ -132,182 +161,727 @@ export const translations = {
         {
           id: "en",
           name: "English",
-          proficiency: "Native / Fluent",
+          proficiency: "A2 level",
           desc: "Fluent speaker with excellent communication, presentation, and technical writing skills.",
-          flag: "us"
+          flag: "us",
         },
         {
           id: "bn",
           name: "Bengali",
-          proficiency: "Native (মাতৃভাষা)",
+          proficiency: "Native",
           desc: "Native speaker with complete command of professional, spoken, and literary Bengali.",
-          flag: "bd"
-        }
-      ]
+          flag: "bd",
+        },
+      ],
     },
-    contactSection: {
-      titlePrefix: "Get In",
-      titleHighlight: "Touch",
-      cardTitle: "Let's Connect & Collaborate",
-      cardDesc: "Open to data analytics opportunities, full stack development, freelance projects, or simply discussing tech trends.",
-      emailLabel: "Email",
-      locationLabel: "Location",
-      socialsLabel: "Socials",
-      nameInputLabel: "Your Name",
-      nameInputPlaceholder: "e.g. John Doe",
-      emailInputLabel: "Email Address",
-      emailInputPlaceholder: "john@example.com",
-      messageInputLabel: "Message",
-      messageInputPlaceholder: "Write your message here...",
-      sendBtn: "Send Message",
-      sentTitle: "Message Sent!",
-      sentDesc: "Thank you for reaching out. I will get back to you as soon as possible."
+contactSection: {
+      subtitle: "Don't hesitate to",
+      titlePrefix: "Contact",
+      titleHighlight: "Me",
+      sendTitlePrefix: "Send me a",
+      sendTitleHighlight: "message",
+      namePlaceholder: "Name *",
+      emailPlaceholder: "E-mail *",
+      subjectPlaceholder: "Subject *",
+      messagePlaceholder: "Message *",
+      sendBtn: "SEND MESSAGE",
+      sendingBtn: "SENDING...",
+      sentSuccess: "Thank you! Your message has been sent successfully to Abdullah's email.",
+      preferTitlePrefix: "Or if you",
+      preferTitleHighlight: "prefer...",
+      supportTitlePrefix: "Support my",
+      supportTitleHighlight: "work",
+      supportP1: "If you find my open-source work helpful or enjoy browsing through my portfolio, please consider supporting my work with a coffee!",
+      supportP2: "Your support helps me continue developing and maintaining projects that benefit the community and help me create more useful resources for developers.",
+      supportBtn: "Buy Me a Coffee"
     },
     educationSection: {
-      titlePrefix: "Academic",
-      titleHighlight: "Education",
-      items: [
+      subtitle: "This is my",
+      titlePrefix: "Education",
+      titleHighlight: "Background",
+      tabAll: "All",
+      tabAcademic: "Academic",
+      tabOnline: "Online Courses",
+      academicItems: [
         {
-          degree: "Bachelor of Science in Computer Science & Engineering",
-          institution: "University of Dhaka / Affiliated Institute",
-          location: "Dhaka, Bangladesh",
-          period: "2020 - 2024",
-          grade: "First Class Distinction",
-          description: "Focused on Data Analytics, Probability & Statistics, Relational Databases, Algorithms, and Modern Web Systems."
+          id: "diploma",
+          category: "academic",
+          degree: "Diploma in Computer Science & Technology",
+          institution: "Dinajpur Polytechnic Institute",
+          period: "2022 – 2026 (Expected)",
+          location: "Dinajpur, Bangladesh",
+          semester: "8th Semester",
+          grade: "CGPA: 3.73 / 4.00",
+          status: "Currently Pursuing",
+          badgeType: "polytechnic",
+          description:
+            "Pursuing a comprehensive diploma covering programming, databases, web development, networking, and software engineering fundamentals. Actively involved in coding clubs and hackathons.",
+          highlights: [
+            "Achieved an outstanding CGPA of 3.73 out of 4.00 across completed semesters.",
+            "Proficient in C, C++, Python, JavaScript, and relational database systems (SQL).",
+            "Specializing in modern full-stack web development with the MERN stack.",
+            "Collaborative team player with good communication and problem-solving skills.",
+          ],
+          tags: [
+            "Web Development",
+            "Data Structures",
+            "Database Management",
+            "Networking",
+            "Software Engineering",
+            "C / C++",
+            "JavaScript",
+            "Python",
+          ],
         },
         {
-          degree: "Higher Secondary Certificate (HSC) - Science",
-          institution: "Dhaka Board",
-          location: "Dhaka, Bangladesh",
-          period: "2018 - 2020",
-          grade: "GPA 5.00",
-          description: "Core coursework in Higher Mathematics, Physics, Chemistry, and ICT."
-        }
-      ]
+          id: "ssc",
+          category: "academic",
+          degree: "Secondary School Certificate (SSC)",
+          institution: "Pirganj Municipal High School",
+          period: "2021",
+          location: "Pirganj, Rangpur",
+          grade: "GPA: 5.00 / 5.00",
+          status: "Perfect Score Achievement 🏆",
+          badgeType: "school",
+          description:
+            "Completed secondary education with outstanding academic performance. Achieved perfect GPA in Science group with specialization in Mathematics and Physics.",
+          highlights: [
+            "Achieved perfect GPA 5.00 (Golden A+) in the Science group.",
+            "Demonstrated strong academic excellence in Higher Mathematics and Physics.",
+            "Developed critical analytical thinking, discipline, and scientific problem-solving abilities.",
+          ],
+          tags: [
+            "Mathematics",
+            "Physics",
+            "Chemistry",
+            "Higher Math",
+            "General Science",
+            "ICT",
+          ],
+        },
+        {
+          id: "jsc",
+          category: "academic",
+          degree: "Junior School Certificate (JSC)",
+          institution: "Pirganj Municipal High School",
+          period: "2018",
+          location: "Pirganj, Rangpur",
+          grade: "GPA: 4.86 / 5.00",
+          status: "High Distinction",
+          badgeType: "school",
+          description:
+            "Strong foundation in academics with excellent results. Participated in various academic competitions and extracurricular activities.",
+          highlights: [
+            "Graduated with excellent results (GPA 4.86) demonstrating consistent academic dedication.",
+            "Participated actively in school academic contests, debates, and extracurricular projects.",
+            "Established a firm foundation in science, mathematics, and English communication.",
+          ],
+          tags: [
+            "General Science",
+            "Mathematics",
+            "English",
+            "Bengali",
+            "Analytical Thinking",
+          ],
+        },
+      ],
+      onlineItems: [
+        {
+          id: "phero-web-dev",
+          category: "online",
+          degree: "Complete Web Development",
+          institution: "Programming Hero",
+          period: "2024",
+          location: "Online",
+          status: "Certificate of Completion with Excellence 🏆",
+          badgeType: "phero",
+          hasCertificate: true,
+          certFile: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          description:
+            "Completed an intensive, full-stack web development program covering modern JavaScript, responsive design, React.js frontend architecture, backend REST APIs, and database engineering.",
+          highlights: [
+            "Mastered HTML5, modern CSS3, responsive layouts, and Tailwind CSS framework.",
+            "Built responsive Single Page Applications (SPAs) with React.js, React Router, and context state.",
+            "Developed scalable backend web services with Node.js, Express.js, and MongoDB database.",
+            "Awarded Certificate of Completion with Excellence (Batch 10, Student ID: WEB10-2954).",
+          ],
+          tags: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "REST APIs",
+            "Full Stack",
+          ],
+        },
+        {
+          id: "python-beginners",
+          category: "online",
+          degree: "Python for Beginners",
+          institution: "MySirG.com",
+          period: "Jan 2025 – Feb 2025",
+          location: "Online",
+          status: "Verified Credential",
+          badgeType: "avatar2",
+          hasCertificate: false,
+          description:
+            "Completed an online course on Python programming from MySirG.com, focusing on building a strong foundation in coding concepts and practical problem-solving using Python.",
+          highlights: [
+            "Mastered Python syntax, variables, data structures, and core data types.",
+            "Implemented control structures like loops, conditionals, and exception handling.",
+            "Worked with modular functions, file handling, and object-oriented programming concepts.",
+            "Practiced hands-on coding exercises and algorithmic challenges to strengthen logical thinking.",
+          ],
+          tags: [
+            "Python",
+            "Control Structures",
+            "Data Types",
+            "OOP",
+            "Problem Solving",
+            "File Handling",
+          ],
+        },
+        {
+          id: "data-analysis-python",
+          category: "online",
+          degree: "Data Analysis with Python",
+          institution: "IBM",
+          period: "Jan 2026",
+          location: "Online",
+          status: "Verified Credential",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "Completed Data Analysis with Python certification from IBM, demonstrating data cleaning, statistical modeling, and analytical pipeline construction.",
+          highlights: [
+            "Cleaned, wrangled, and preprocessed real-world tabular data using Pandas and NumPy.",
+            "Built exploratory data analysis workflows and computed descriptive statistics.",
+            "Developed predictive models and data transformations for informed decision-making.",
+          ],
+          tags: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Data Cleaning",
+            "Statistical Modeling",
+            "Data Analysis",
+          ],
+        },
+        {
+          id: "data-vis-python",
+          category: "online",
+          degree: "Data Visualization with Python",
+          institution: "IBM",
+          period: "Dec 2025",
+          location: "Online",
+          status: "Verified Credential",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "Completed Data Visualization with Python from IBM, specializing in interactive charts, informative dashboards, and visual data storytelling.",
+          highlights: [
+            "Visualized complex multi-dimensional datasets using Matplotlib and Seaborn.",
+            "Designed publication-ready plots, bar charts, heatmaps, and trend projections.",
+            "Mastered visual storytelling techniques to effectively communicate insights to stakeholders.",
+          ],
+          tags: [
+            "Matplotlib",
+            "Seaborn",
+            "Data Visualization",
+            "Dashboards",
+            "Visual Storytelling",
+          ],
+        },
+        {
+          id: "power-bi",
+          category: "online",
+          degree: "Power BI Specialist",
+          institution: "SkillCourse",
+          period: "Nov 2024",
+          location: "Online",
+          status: "Verified Credential",
+          badgeType: "avatar1",
+          hasCertificate: false,
+          description:
+            "Achieved Power BI certification demonstrating expertise in relational data modeling, custom DAX measure authoring, and interactive business dashboard creation.",
+          highlights: [
+            "Engineered star-schema data models and optimized ETL pipelines via Power Query.",
+            "Authored complex DAX calculations for KPIs, growth comparisons, and dynamic filters.",
+            "Published responsive executive dashboards with drill-down and cross-filtering features.",
+          ],
+          tags: [
+            "Power BI",
+            "DAX Formulas",
+            "Data Modeling",
+            "Business Intelligence",
+            "Interactive Dashboards",
+          ],
+        },
+        {
+          id: "sql-data-science",
+          category: "online",
+          degree: "SQL for Data Science",
+          institution: "University of California (UC Davis)",
+          period: "Oct 2024",
+          location: "Online",
+          status: "Verified Credential",
+          badgeType: "school",
+          hasCertificate: false,
+          description:
+            "Completed advanced SQL relational database querying and indexing certification focusing on complex joins, aggregation, and query performance optimization.",
+          highlights: [
+            "Wrote advanced SQL queries featuring multi-table joins, window functions, and subqueries.",
+            "Designed relational schemas and established relational constraints and indexing strategies.",
+            "Extracted and filtered large datasets for analytics and backend integration.",
+          ],
+          tags: [
+            "SQL",
+            "PostgreSQL",
+            "Relational Databases",
+            "Indexing",
+            "Query Optimization",
+            "Data Modeling",
+          ],
+        },
+      ],
     },
     techStackSection: {
-      titlePrefix: "Technical",
+      subtitle: "Explore",
+      titlePrefix: "My",
       titleHighlight: "Tech Stack",
-      categories: [
+      tabAll: "All",
+      tabFrontend: "Frontend",
+      tabBackend: "Backend",
+      tabDatabase: "Database",
+      tabShopify: "Shopify",
+      tabTools: "Tools",
+      skills: [
         {
-          title: "Data Analysis & Visualization",
-          skills: ["Power BI", "Microsoft Excel (Advanced)", "Tableau", "Matplotlib", "Seaborn", "DAX Formulas"]
+          id: "react",
+          name: "React.js",
+          category: "frontend",
+          percentage: 90,
+          iconId: "react",
         },
         {
-          title: "Languages & Frameworks",
-          skills: ["Python", "SQL (PostgreSQL / MySQL)", "JavaScript / React", "Pandas", "NumPy", "Scikit-Learn"]
+          id: "javascript",
+          name: "JavaScript",
+          category: "frontend",
+          percentage: 92,
+          iconId: "javascript",
         },
         {
-          title: "Databases & ETL",
-          skills: ["PostgreSQL", "MySQL", "Data Cleaning", "Data Modeling", "ETL Pipelines", "Query Optimization"]
+          id: "typescript",
+          name: "TypeScript",
+          category: "frontend",
+          percentage: 80,
+          iconId: "typescript",
         },
         {
-          title: "Tools & Environments",
-          skills: ["Jupyter Notebook", "VS Code", "Git & GitHub", "Google Colab", "Tailwind CSS", "Linux Shell"]
-        }
-      ]
+          id: "nextjs",
+          name: "Next.js",
+          category: "frontend",
+          percentage: 82,
+          iconId: "nextjs",
+        },
+        {
+          id: "nodejs",
+          name: "Node.js",
+          category: "backend",
+          percentage: 85,
+          iconId: "nodejs",
+        },
+        {
+          id: "express",
+          name: "Express.js",
+          category: "backend",
+          percentage: 88,
+          iconId: "express",
+        },
+        {
+          id: "mongodb",
+          name: "MongoDB",
+          category: "database",
+          percentage: 85,
+          iconId: "mongodb",
+        },
+        {
+          id: "tailwind",
+          name: "Tailwind CSS",
+          category: "frontend",
+          percentage: 95,
+          iconId: "tailwind",
+        },
+        {
+          id: "firebase",
+          name: "Firebase",
+          category: "backend",
+          percentage: 80,
+          iconId: "firebase",
+        },
+        {
+          id: "git",
+          name: "Git",
+          category: "tools",
+          percentage: 88,
+          iconId: "git",
+        },
+        {
+          id: "html5",
+          name: "HTML5",
+          category: "frontend",
+          percentage: 95,
+          iconId: "html5",
+        },
+        {
+          id: "css3",
+          name: "CSS3",
+          category: "frontend",
+          percentage: 92,
+          iconId: "css3",
+        },
+        {
+          id: "shopify",
+          name: "Shopify",
+          category: "shopify",
+          percentage: 90,
+          iconId: "shopify",
+        },
+        {
+          id: "liquid",
+          name: "Shopify Liquid",
+          category: "shopify",
+          percentage: 88,
+          iconId: "liquid",
+        },
+        {
+          id: "github",
+          name: "GitHub",
+          category: "tools",
+          percentage: 90,
+          iconId: "github",
+        },
+        {
+          id: "redux",
+          name: "Redux",
+          category: "frontend",
+          percentage: 82,
+          iconId: "redux",
+        },
+      ],
     },
     experienceSection: {
       titlePrefix: "Work",
       titleHighlight: "Experience",
       items: [
         {
-          role: "Data Analyst & Software Fellow",
-          company: "Data Tech Innovations",
-          period: "2023 - Present",
-          type: "Professional",
+          role: "Frontend & Jr. Shopify Developer",
+          company: "Scaleup Ads Agency (Betopia Group)",
+          location: "Dhaka, Bangladesh",
+          period: "December 2025 – Present",
+          type: "Full-time",
+          logo: "/betopia.png",
           highlights: [
-            "Analyzed multi-source sales datasets to generate executive Power BI dashboards, identifying business bottlenecks.",
-            "Authored optimized SQL queries reducing query extraction time by 35% across massive data rows.",
-            "Collaborated with cross-functional product teams to deliver automated KPI reporting metrics."
-          ]
+            "Developed and customized Shopify stores using Shopify Liquid, HTML, CSS, and JavaScript.",
+            "Redesigned Shopify themes and storefronts to deliver responsive and user-friendly experiences.",
+            "Customized product pages, collection pages, navigation, cart functionality, and theme sections.",
+            "Troubleshot frontend issues and implemented Shopify features and app integrations based on client requirements.",
+          ],
         },
         {
-          role: "Data Science Project Associate",
-          company: "Analytics Collaborative",
-          period: "2022 - 2023",
-          type: "Project Fellow",
+          role: "Sales Executive",
+          company: "MN Trade International",
+          location: "Dinajpur, Bangladesh",
+          period: "January 2022 – August 2025",
+          type: "Full-time",
           highlights: [
-            "Built predictive machine learning models in Python for customer segmentation using clustering algorithms.",
-            "Conducted extensive exploratory data analysis (EDA) and data cleansing pipelines on raw messy inputs."
-          ]
-        }
-      ]
+            "Managed client relationships and business development activities to expand the company's customer base.",
+            "Coordinated with suppliers and buyers to negotiate pricing, delivery schedules, and trade terms.",
+            "Prepared and maintained sales records, reports, and documentation for import/export trade operations.",
+            "Monitored market trends and competitor activities to identify new sales opportunities and growth areas.",
+            "Developed strong communication and negotiation skills through direct client engagement and deal closure.",
+          ],
+        },
+      ],
     },
     portfolioSection: {
-      titlePrefix: "Featured",
-      titleHighlight: "Portfolio Projects",
+      subtitle: "Take a look at",
+      titlePrefix: "My",
+      titleHighlight: "Projects",
+      tabAll: "All",
+      tabFrontend: "Frontend",
+      tabFullStack: "Full Stack",
       items: [
         {
-          title: "Global Sales & Profit Intelligence Dashboard",
-          tag: "Power BI & SQL",
-          description: "Interactive multi-page BI reporting system modeling 500k+ global transactions, featuring forecasting, drill-down KPIs, and customer lifetime value metrics.",
-          tags: ["Power BI", "SQL", "DAX", "Data Modeling"]
+          id: "moviesphere",
+          title: "MovieSphere",
+          category: "frontend",
+          categoryName: "Frontend",
+          iconType: "film",
+          description:
+            "A modern, responsive movie discovery web app allowing users to search any title, explore trending shows, and view detailed cast information, ratings, and plot summaries powered by TVMaze API.",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "TVMaze API",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://movie-spheree.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/movie-explorer",
         },
         {
-          title: "E-Commerce Customer Churn Prediction Engine",
-          tag: "Python & Machine Learning",
-          description: "Supervised machine learning pipeline evaluating customer behavior to forecast churn risk with 89% accuracy using Random Forest and XGBoost.",
-          tags: ["Python", "Pandas", "Scikit-Learn", "Matplotlib"]
+          id: "skywatch",
+          title: "SkyWatch Weather",
+          category: "frontend",
+          categoryName: "Frontend",
+          iconType: "cloud",
+          description:
+            "A smart weather forecast web app requiring no login. Features instant live geolocation tracking, global city search, and dynamic lifestyle alerts such as carrying an umbrella for rain or hydration reminders on sunny days.",
+          tags: [
+            "React.js",
+            "Tailwind CSS",
+            "Open-Meteo API",
+            "Geolocation",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://sky-watch-webapp.netlify.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111/SkyWatch-weather-app",
         },
         {
-          title: "Real-Time Financial Sentiment & Market Trends",
-          tag: "Data Scraping & NLP",
-          description: "Automated ETL script fetching news headlines and Twitter feeds to analyze investor sentiment using VADER sentiment analysis.",
-          tags: ["Python", "BeautifulSoup", "NLTK", "Plotly"]
-        }
-      ]
+          id: "badal-portfolio",
+          title: "Digital Marketer Portfolio",
+          category: "frontend",
+          categoryName: "Frontend",
+          iconType: "briefcase",
+          description:
+            "A modern, high-converting portfolio website built for a digital marketing professional. Features dynamic case studies, service breakdowns, campaign performance metrics, and a seamless client inquiry flow.",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "Netlify",
+            "Responsive UI",
+          ],
+          liveUrl: "https://badal-islam.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/Portfolio",
+        },
+        {
+          id: "blood-donation",
+          title: "Blood Donation Application",
+          category: "fullstack",
+          categoryName: "Full Stack",
+          iconType: "heart",
+          description:
+            "A comprehensive life-saving platform connecting blood donors with recipients. Features secure donor registration, emergency blood request postings, live status tracking, and location-based donor search.",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+          liveUrl: "https://blood-donation-c92df.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=bloo&type=&language=&sort=",
+        },
+        {
+          id: "marathon-system",
+          title: "Marathon Management System",
+          category: "fullstack",
+          categoryName: "Full Stack",
+          iconType: "trophy",
+          description:
+            "An end-to-end marathon event management platform with participant registration, event scheduling, dynamic countdowns, real-time leaderboard tracking, and automated digital certificate generation.",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Full Stack"],
+          liveUrl: "https://marathon-client-side.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=A-11-ma&type=&language=&sort=",
+        },
+        {
+          id: "bpl-playdraft",
+          title: "BPL PlayDraft",
+          category: "frontend",
+          categoryName: "Frontend",
+          iconType: "gamepad",
+          description:
+            "An interactive fantasy cricket drafting platform for Bangladesh Premier League (BPL). Allows users to draft custom squads, manage player purchase budgets, view live telemetry, and climb the leaderboard.",
+          tags: [
+            "React.js",
+            "JavaScript",
+            "Tailwind CSS",
+            "DaisyUI",
+            "State Management",
+          ],
+          liveUrl: "https://dream-bpl-bpl-draft-website-a-07.surge.sh/",
+          githubUrl: "https://github.com/abdullahalmamun111/BPL-PlayDraft-2024",
+        },
+      ],
     },
     servicesSection: {
-      titlePrefix: "Specialized",
+      subtitle: "You can hire me for",
+      titlePrefix: "Web & Shopify",
       titleHighlight: "Services",
-      items: [
+      introP1:
+        "I am a Junior Shopify Developer & Full-Stack Developer with 8.5+ months of hands-on experience in Shopify store development, theme customization, redesigning storefronts, and full-stack MERN engineering. Whether building custom stores from scratch or scaling full-stack applications, I turn business ideas into seamless digital experiences.",
+      introP2: "If you're interested in working with me,",
+      whatsappCta: "Don't hesitate to contact me on WhatsApp by Clicking now.",
+      testimonialsTitlePrefix: "Client",
+      testimonialsTitleHighlight: "testimonials",
+      testimonials: [
         {
-          title: "Interactive BI Dashboard Development",
-          description: "Designing end-to-end Power BI & Tableau dashboards with dynamic DAX metrics, automated drill-downs, and executive visual reporting."
+          id: 1,
+          quote:
+            "Abdullah customized our Shopify product and collection pages flawlessly. Store load time and mobile conversion improved significantly. Highly recommended!",
+          name: "David Miller",
+          role: "E-Commerce Founder",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "Data Cleaning & Preprocessing",
-          description: "Transforming unstructured or noisy business data into clean, structured schemas ready for rigorous analysis and statistical modeling."
+          id: 2,
+          quote:
+            "Outstanding full-stack work! He built our web application with React and Node.js on time. Clean code, great communication, and attention to detail.",
+          name: "Sarah Jenkins",
+          role: "Product Manager",
+          avatar:
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "Advanced Excel Automation & Modeling",
-          description: "Building complex financial models, automated Pivot tables, Power Query macros, and custom business analysis workbooks."
+          id: 3,
+          quote:
+            "Great problem-solving skills! He fixed critical Shopify Liquid bugs and integrated third-party apps seamlessly for our retail storefront.",
+          name: "Alex Rahman",
+          role: "Marketing Director",
+          avatar:
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        },
+      ],
+      whatIDoTitlePrefix: "What",
+      whatIDoTitleHighlight: "I do",
+      workflow: [
+        {
+          id: 1,
+          titlePrefix: "Shopify Store",
+          titleSuffix: "Setup & Redesign",
+          percentage: 95,
+          desc: "Full store setup, theme redesign, and custom layouts for optimal user conversion.",
+          iconType: "store",
         },
         {
-          title: "Predictive Analytics & Machine Learning",
-          description: "Implementing statistical algorithms in Python to uncover correlations, cluster behavior, and forecast future business trends."
-        }
-      ]
+          id: 2,
+          titlePrefix: "Liquid &",
+          titleSuffix: "Theme Customization",
+          percentage: 90,
+          desc: "Tailoring Liquid code, product pages, dynamic sections, and cart features.",
+          iconType: "liquid",
+        },
+        {
+          id: 3,
+          titlePrefix: "Full-Stack Web",
+          titleSuffix: "Development",
+          percentage: 85,
+          desc: "Building scalable single page applications with React.js, Node.js, Express & MongoDB.",
+          iconType: "mern",
+        },
+        {
+          id: 4,
+          titlePrefix: "Responsive",
+          titleSuffix: "UI/UX Design",
+          percentage: 95,
+          desc: "Transforming Figma designs into pixel-perfect, mobile-first responsive interfaces.",
+          iconType: "ui",
+        },
+        {
+          id: 5,
+          titlePrefix: "Shopify Apps &",
+          titleSuffix: "API Integrations",
+          percentage: 85,
+          desc: "Integrating Shopify apps, third-party payment gateways, and custom functionalities.",
+          iconType: "apps",
+        },
+        {
+          id: 6,
+          titlePrefix: "Bug Fixing &",
+          titleSuffix: "Troubleshooting",
+          percentage: 90,
+          desc: "Diagnosing frontend issues, optimizing performance, and resolving responsive bugs.",
+          iconType: "troubleshoot",
+        },
+      ],
     },
-    updatesSection: {
+updatesSection: {
+      subtitle: "Take a look at my",
       titlePrefix: "Recent",
-      titleHighlight: "Updates & Feed",
+      titleHighlight: "Updates",
+      stats: [
+        { id: 1, value: "850+", label: "Coffees consumed", iconType: "coffee" },
+        { id: 2, value: "85,000+", label: "Lines of code", iconType: "code" },
+        { id: 3, value: "Infinite", label: "Passion for learning", iconType: "heart" },
+        { id: 4, value: "14+", label: "Projects & Stores", iconType: "store" }
+      ],
+      timelineTitlePrefix: "Life",
+      timelineTitleHighlight: "Updates",
+      moreText: "Get to know",
+      moreHighlight: "more",
       items: [
         {
-          date: "September 2026",
-          title: "Completed Advanced Data Engineering Specialization",
-          tag: "Milestone",
-          body: "Deepened proficiency in PostgreSQL optimization, ETL pipeline architecture, and automated cloud data workflows."
+          id: 1,
+          titlePrefix: "Working on",
+          titleHighlight: "Shopify Storefronts & Client Projects",
+          org: "Scaleup Ads Agency (Betopia Group)",
+          location: "Dhaka, Bangladesh",
+          date: "Dec 2025 – Present",
+          desc: "Actively developing and customizing high-converting Shopify stores. Working extensively with Shopify Liquid, custom theme sections, responsive styling, cart functionality, and third-party app integrations based on client requirements.",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "August 2026",
-          title: "Published Open Source Power BI Template Library",
-          tag: "Community",
-          body: "Released a reusable collection of clean minimal theme palettes and pre-configured DAX measures for executive reporting."
+          id: 2,
+          titlePrefix: "Building scalable",
+          titleHighlight: "Full-Stack MERN Web Applications",
+          org: "Personal Projects & Freelance",
+          location: "Dhaka, Bangladesh",
+          date: "Jul 2025 – Oct 2025",
+          desc: "Engineered scalable full-stack web applications using React.js, Tailwind CSS, Node.js, Express, and MongoDB. Implemented secure authentication, RESTful APIs, and location-based data services.",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "July 2026",
-          title: "Exploratory Data Analysis on Global Health Trends",
-          tag: "Research",
-          body: "Analyzed WHO datasets utilizing Python and Seaborn, publishing findings on interactive web dashboards."
+          id: 3,
+          titlePrefix: "Mastering advanced",
+          titleHighlight: "Shopify Liquid & Theme Architecture",
+          org: "Shopify Partner Community",
+          location: "Online",
+          date: "Jan 2025 – Mar 2025",
+          desc: "Deepened practical skills in Shopify Liquid tags, filters, objects, custom section schemas, and AJAX Cart API to deliver ultrafast mobile-first e-commerce storefronts.",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
+        },
+        {
+          id: 4,
+          titlePrefix: "Completed",
+          titleHighlight: "Diploma in Computer Science & Technology",
+          org: "Dinajpur Polytechnic Institute",
+          location: "Dinajpur, Bangladesh",
+          date: "2022 – 2026",
+          desc: "Successfully completed Diploma in Engineering with outstanding academic results (CGPA: 3.73 / 4.00), building a robust foundation in data structures, algorithms, databases, and software engineering.",
+          links: {
+            github: "https://github.com/abdullahalmamun111"
+          }
         }
       ]
     },
     themes: {
       light: "Light Theme",
       dark: "Dark Theme",
-      midnight: "Midnight Theme"
+      midnight: "Midnight Theme",
     },
     actions: {
       downloadResume: "Download Resume",
@@ -320,15 +894,15 @@ export const translations = {
       cursorDisabled: "Magic Cursor: Disabled",
       closeWindow: "Close Window",
       collapseSidebar: "Collapse Sidebar",
-      expandSidebar: "Expand Sidebar"
+      expandSidebar: "Expand Sidebar",
     },
     preloader: {
       initializing: "INITIALIZING",
       loadingAssets: "OPTIMIZING INTERFACE",
       buildingModules: "LOADING MODULES",
       finalizing: "FINALIZING",
-      complete: "READY"
-    }
+      complete: "READY",
+    },
   },
   bn: {
     langName: "বাংলা",
@@ -336,13 +910,13 @@ export const translations = {
     greeting: "হ্যালো স্বাগতম...",
     name: "আব্দুল্লাহ",
     surname: "আল মামুন",
-    title: "ভবিষ্যত ডেটা সায়েন্টিস্ট",
-    badgeRole: "ডেটা অ্যানালিস্ট ও ডেভেলপার",
+    title: "MERN Stack Developer",
+    badgeRole: "Jr. Shopify Developer & MERN Stack Dev",
     location: "ঢাকা, বাংলাদেশ",
     email: "almamun6027@gmail.com",
-    linkedin: "লিঙ্কডইন",
+    linkedin: "LinkedIn",
     linkedinUrl: "https://www.linkedin.com/in/abdullah-dev67/",
-    github: "গিটহাব",
+    github: "Github",
     githubUrl: "https://github.com/abdullahalmamun111",
     pronounceAudio: "Abdullah Al Mamun",
     nav: {
@@ -353,14 +927,14 @@ export const translations = {
       portfolio: "পোর্টফোলিও",
       services: "সেবাসমূহ",
       updates: "আপডেটস",
-      contact: "যোগাযোগ"
+      contact: "যোগাযোগ",
     },
     aboutSection: {
-      taglinePrefix: "সংক্ষেপে কিছু কথা",
-      taglineHighlight: "আমার সম্পর্কে...",
-      p1: "আমি <strong class='font-bold text-[var(--color-text-primary)]'>আব্দুল্লাহ আল মামুন</strong>, একজন <a href='#analytics' class='text-[var(--color-accent)] font-medium hover:underline'>ডেটা অ্যানালিস্ট ও ডেভেলপার</a> যার পরিসংখ্যান, ডেটা স্ট্রাকচার এবং <strong class='font-bold text-[var(--color-text-primary)]'>Python ও SQL</strong>-এ শক্ত ভিত্তি রয়েছে। <strong class='font-bold text-[var(--color-text-primary)]'>Excel ও Power BI</strong> ব্যবহারের মাধ্যমে ডেটা বিশ্লেষণ, ক্লিনিং এবং ভিজ্যুয়ালাইজেশনে বিশেষভাবে দক্ষ। বাস্তবসম্মত ডেটাসেট নিয়ে একাডেমিক প্রজেক্ট ও প্রেডিক্টিভ মডেলিং (Pandas, NumPy ও Matplotlib) এ সফল অভিজ্ঞতা রয়েছে।",
-      p2: "সমস্যা সমাধানের দৃঢ় দক্ষতা, সূক্ষ্ম পর্যবেক্ষণ এবং ডেটা-চালিত সিদ্ধান্ত গ্রহণে সহায়তা করতে ট্রেন্ড ও প্যাটার্ন উন্মোচনে আগ্রহী। একটি উদ্যমী টিমের সাথে কাজ করে অ্যানালিটিক্স ও আধুনিক ওয়েব ডেভেলপমেন্টের ক্ষেত্রে নিজেকে আরো এগিয়ে নিতে প্রস্তুত।",
-      p3: "আপনার সাথে একসাথে কাজ করার অপেক্ষায় <strong class='font-bold text-[var(--color-text-primary)]'>থাকলাম!</strong>"
+      taglinePrefix: "একজন নিবেদিতপ্রাণ",
+      taglineHighlight: "Full Stack & Jr. Shopify Developer",
+      p1: "হ্যালো! আমি আব্দুল্লাহ আল মামুন, একজন প্যাশনেট Full Stack & Jr. Shopify Developer। শপিফাই স্টোর ডেভেলপমেন্ট, লিকুইড থিম কাস্টমাইজেশন, স্টোরফ্রন্ট রিডিজাইন এবং MERN স্ট্যাক ইঞ্জিনিয়ারিংয়ে আমার ৮.৫+ মাসের বাস্তব অভিজ্ঞতা রয়েছে। আমি দিনাজপুর পলিটেকনিক ইনস্টিটিউট থেকে কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজিতে ডিপ্লোমা ইন ইঞ্জিনিয়ারিং সফলভাবে সম্পন্ন করেছি।",
+      p2: "আমি রেসপনসিভ স্টোরফ্রন্ট, প্রোডাক্ট ও কালেকশন পেজ, নেভিগেশন এবং কার্ট ফাংশনালিটি কাস্টমাইজেশনে পারদর্শী। শপিফাই ইকোসিস্টেমের পাশাপাশি React.js, Node.js, Express এবং MongoDB দিয়ে আধুনিক ও স্কেলেবল ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন তৈরি করি। জটিল সমস্যা সমাধান এবং ক্রিয়েটিভ আইডিয়াগুলোকে মার্জিত ডিজিটাল সলিউশনে রূপান্তর করতে আমি ভীষণ ভালোবাসি।",
+      p3: "আপনার পরবর্তী প্রজেক্টে একসাথে কাজ করার জন্য আমি অত্যন্ত আগ্রহী!",
     },
     certSection: {
       titlePrefix: "আমার",
@@ -368,45 +942,74 @@ export const translations = {
       certs: [
         {
           id: 1,
-          titlePrefix: "Python",
-          titleSuffix: "for Beginners",
-          issuer: "MySirG.com থেকে পাইথন সার্টিফিকেশন সম্পন্ন, প্রোগ্রামিং, সমস্যা-সমাধান এবং বাস্তব প্রয়োগে পারদর্শিতা।",
-          date: "জানুয়ারি ২০২৫",
-          badgeType: "avatar2"
+          titlePrefix: "Complete Web",
+          titleSuffix: "Development",
+          issuer:
+            "Programming Hero থেকে ২০২৪ সালে Complete Web Development কোর্স সফলভাবে সম্পন্ন, যেখানে HTML, CSS, JavaScript, React, Node.js, Express.js ও MongoDB অন্তর্ভুক্ত ছিল।",
+          date: "২০২৪",
+          badgeType: "phero",
+          hasFile: true,
+          certFile: "/certificate-web-development.jpg",
+          certImage: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          issuerName: "Programming Hero",
         },
         {
           id: 2,
-          titlePrefix: "Data Analysis",
-          titleSuffix: "with Python",
-          issuer: "IBM থেকে ডেটা অ্যানালিসিস উইথ পাইথন সার্টিফিকেশন সম্পন্ন, ডেটা ক্লিনিং, ভিজ্যুয়ালাইজেশন এবং অ্যানালিসিসে প্রমাণিত পারদর্শিতা।",
-          date: "জানুয়ারি ২০২৬",
-          badgeType: "ibm"
+          titlePrefix: "Python",
+          titleSuffix: "for Beginners",
+          issuer:
+            "MySirG.com থেকে পাইথন সার্টিফিকেশন সম্পন্ন, প্রোগ্রামিং, সমস্যা-সমাধান এবং বাস্তব প্রয়োগে পারদর্শিতা।",
+          date: "জানুয়ারি ২০২৫",
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "MySirG.com",
         },
         {
           id: 3,
-          titlePrefix: "Data Visualization",
+          titlePrefix: "Data Analysis",
           titleSuffix: "with Python",
-          issuer: "IBM থেকে ডেটা ভিজ্যুয়ালাইজেশন উইথ পাইথন সম্পন্ন, চার্ট, ড্যাশবোর্ড ও ডেটা স্টোরিটেলিংয়ে দক্ষতা।",
-          date: "ডিসেম্বর ২০২৫",
-          badgeType: "ibm"
+          issuer:
+            "IBM থেকে ডেটা অ্যানালিসিস উইথ পাইথন সার্টিফিকেশন সম্পন্ন, ডেটা ক্লিনিং, ভিজ্যুয়ালাইজেশন এবং অ্যানালিসিসে প্রমাণিত পারদর্শিতা।",
+          date: "জানুয়ারি ২০২৬",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 4,
-          titlePrefix: "Power BI",
-          titleSuffix: "Specialist",
-          issuer: "SkillCourse থেকে Power BI সার্টিফিকেশন অর্জন, ডেটা ভিজ্যুয়ালাইজেশন, রিপোর্টিং ও ইন্টারেক্টিভ ড্যাশবোর্ডে দক্ষতা।",
-          date: "নভেম্বর ২০২৪",
-          badgeType: "avatar1"
+          titlePrefix: "Data Visualization",
+          titleSuffix: "with Python",
+          issuer:
+            "IBM থেকে ডেটা ভিজ্যুয়ালাইজেশন উইথ পাইথন সম্পন্ন, চার্ট, ড্যাশবোর্ড ও ডেটা স্টোরিটেলিংয়ে দক্ষতা।",
+          date: "ডিসেম্বর ২০২৫",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 5,
+          titlePrefix: "Power BI",
+          titleSuffix: "Specialist",
+          issuer:
+            "SkillCourse থেকে Power BI সার্টিফিকেশন অর্জন, ডেটা ভিজ্যুয়ালাইজেশন, রিপোর্টিং ও ইন্টারেক্টিভ ড্যাশবোর্ডে দক্ষতা।",
+          date: "নভেম্বর ২০২৪",
+          badgeType: "avatar1",
+          hasFile: false,
+          issuerName: "SkillCourse",
+        },
+        {
+          id: 6,
           titlePrefix: "SQL for",
           titleSuffix: "Data Science",
-          issuer: "অ্যাডভান্সড এসকিউএল রিলেশনাল ডাটাবেস ও ইনডেক্সিং সার্টিফিকেশন সম্পন্ন।",
+          issuer:
+            "University of California থেকে অ্যাডভান্সড এসকিউএল রিলেশনাল ডাটাবেস ও ইনডেক্সিং সার্টিফিকেশন সম্পন্ন।",
           date: "অক্টোবর ২০২৪",
-          badgeType: "avatar2"
-        }
-      ]
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "UC Davis",
+        },
+      ],
     },
     interestsSection: {
       titlePrefix: "ব্যক্তিগত",
@@ -414,47 +1017,47 @@ export const translations = {
       items: [
         {
           id: 1,
-          highlight: "নতুন প্রযুক্তি",
-          rest: "শেখা",
-          desc: "ডেটা সায়েন্স ও আধুনিক প্রযুক্তির উন্নত টুলস সম্পর্কে প্রতিনিয়ত জ্ঞান অর্জন।",
-          iconType: "searchChart"
+          highlight: "ওয়েব অ্যাপ্লিকেশন",
+          rest: "তৈরি করা",
+          desc: "MERN স্ট্যাক ব্যবহার করে ডায়নামিক ও স্কেলেবল ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন তৈরি করা।",
+          iconType: "laptopCode",
         },
         {
           id: 2,
-          highlight: "সমস্যা",
-          rest: "সমাধান",
-          desc: "যৌক্তিক ও বিশ্লেষণধর্মী চিন্তাভাবনা দিয়ে জটিল সমস্যা সমাধান করা।",
-          iconType: "laptopCode"
+          highlight: "Shopify",
+          rest: "ডেভেলপমেন্ট",
+          desc: "Liquid, HTML, CSS ও JS ব্যবহার করে Shopify থিম, স্টোরফ্রন্ট এবং ই-কমার্স সলিউশন কাস্টমাইজ করা।",
+          iconType: "barChart",
         },
         {
           id: 3,
-          highlight: "ডেটা নিয়ে",
-          rest: "কাজ করা",
-          desc: "ডেটা থেকে প্রয়োজনীয় অন্তর্দৃষ্টি এবং কার্যকর প্যাটার্ন খুঁজে বের করা।",
-          iconType: "barChart"
+          highlight: "React.js",
+          rest: "ও ফ্রন্টএন্ড",
+          desc: "React.js, Tailwind CSS এবং আধুনিক ডিজাইন সিস্টেম ব্যবহার করে ইন্টারঅ্যাক্টিভ ও রেসপনসিভ UI তৈরি।",
+          iconType: "searchChart",
         },
         {
           id: 4,
-          highlight: "ড্যাশবোর্ড",
-          rest: "ডিজাইন",
-          desc: "সহজ ও আকর্ষণীয় ডেটা ভিজ্যুয়ালাইজেশনের জন্য ইন্টারেক্টিভ ড্যাশবোর্ড তৈরি।",
-          iconType: "pieChart"
+          highlight: "সমস্যা",
+          rest: "সমাধান",
+          desc: "যৌক্তিক ও বিশ্লেষণধর্মী চিন্তাভাবনা দিয়ে জটিল প্রোগ্রামিং চ্যালেঞ্জ সমাধান করা।",
+          iconType: "database",
         },
         {
           id: 5,
-          highlight: "SQL চ্যালেঞ্জ",
-          rest: "সলভ করা",
-          desc: "কোয়েরি দক্ষতা বাড়াতে নিয়মিত এসকিউএল চ্যালেঞ্জ অনুশীলন করা।",
-          iconType: "database"
+          highlight: "নতুন প্রযুক্তি",
+          rest: "শেখা",
+          desc: "ওয়েব ডেভেলপমেন্টের আধুনিক টুলস, ফ্রেমওয়ার্ক এবং সেরা কর্মপদ্ধতি সম্পর্কে নিরন্তর জ্ঞান অর্জন।",
+          iconType: "pieChart",
         },
         {
           id: 6,
           highlight: "পোর্টফোলিও",
           rest: "ডিজাইন",
-          desc: "প্রজেক্ট এবং দক্ষতা ফুটিয়ে তুলতে আকর্ষণীয় আধুনিক পোর্টফোলিও তৈরি করা।",
-          iconType: "heart"
-        }
-      ]
+          desc: "প্রজেক্ট এবং দক্ষতাগুলোকে সুন্দরভাবে ফুটিয়ে তুলতে আধুনিক ও দৃষ্টিনন্দন পোর্টফোলিও তৈরি করা।",
+          iconType: "heart",
+        },
+      ],
     },
     languagesSection: {
       titlePrefix: "যে ভাষাগুলোতে",
@@ -463,182 +1066,727 @@ export const translations = {
         {
           id: "en",
           name: "English",
-          proficiency: "Fluent / Professional",
-          desc: "চমৎকার যোগাযোগ, উপস্থাপনা ও টেকনিক্যাল লেখার দক্ষতাসম্পন্ন।",
-          flag: "us"
+          proficiency: "A2 level",
+          desc: "চমৎকার যোগাযোগ, উপস্থাপনা ও টেকনিক্যাল লেখার দক্ষতাসহ সাবলীলভাবে কথা বলতে সক্ষম।",
+          flag: "us",
         },
         {
           id: "bn",
-          name: "বাংলা (Bengali)",
-          proficiency: "Native (মাতৃভাষা)",
-          desc: "মাতৃভাষা, পেশাগত ও সৃজনশীল যোগাযোগের ক্ষেত্রে সম্পূর্ণ সাবলীল।",
-          flag: "bd"
-        }
-      ]
+          name: "Bengali",
+          proficiency: "Native",
+          desc: "মাতৃভাষা; পেশাগত, কথ্য ও আনুষ্ঠানিক বাংলা যোগাযোগে পূর্ণ পারদর্শী।",
+          flag: "bd",
+        },
+      ],
     },
-    contactSection: {
+contactSection: {
+      subtitle: "দ্বিধা না করে",
       titlePrefix: "যোগাযোগ",
       titleHighlight: "করুন",
-      cardTitle: "আসুন যুক্ত হই ও একসাথে কাজ করি",
-      cardDesc: "ডেটা অ্যানালিটিক্স সুযোগ, সফটওয়্যার ডেভেলপমেন্ট, ফ্রিল্যান্স প্রজেক্ট বা যেকোনো টেক বিষয়ে আলোচনার জন্য প্রস্তুত।",
-      emailLabel: "ইমেইল",
-      locationLabel: "ঠিকানা",
-      socialsLabel: "সোশ্যালস",
-      nameInputLabel: "আপনার নাম",
-      nameInputPlaceholder: "যেমন: আব্দুল্লাহ",
-      emailInputLabel: "ইমেইল ঠিকানা",
-      emailInputPlaceholder: "yourname@example.com",
-      messageInputLabel: "বার্তা লিখুন",
-      messageInputPlaceholder: "আপনার বার্তা এখানে লিখুন...",
+      sendTitlePrefix: "আমাকে বার্তা",
+      sendTitleHighlight: "পাঠান",
+      namePlaceholder: "আপনার নাম *",
+      emailPlaceholder: "ই-মেইল ঠিকানা *",
+      subjectPlaceholder: "বিষয় *",
+      messagePlaceholder: "আপনার বার্তা লিখুন *",
       sendBtn: "বার্তা পাঠান",
-      sentTitle: "বার্তা পাঠানো হয়েছে!",
-      sentDesc: "যোগাযোগ করার জন্য ধন্যবাদ। আমি যত দ্রুত সম্ভব উত্তর দেব।"
+      sendingBtn: "পাঠানো হচ্ছে...",
+      sentSuccess: "ধন্যবাদ! আপনার বার্তাটি সফলভাবে আব্দুল্লাহর ইমেইলে পাঠানো হয়েছে।",
+      preferTitlePrefix: "অথবা সরাসরি যোগাযোগ",
+      preferTitleHighlight: "করতে পারেন...",
+      supportTitlePrefix: "আমার কাজকে",
+      supportTitleHighlight: "সাপোর্ট করুন",
+      supportP1: "আমার ওপেন-সোর্স কাজ বা পোর্টফোলিও আপনার ভালো লাগলে আমাকে এক কাপ কফি উপহার দিয়ে সাপোর্ট করতে পারেন!",
+      supportP2: "আপনার ছোট্ট সাপোর্ট আমাকে কমিউনিটির জন্য আরো দারুণ সব প্রজেক্ট ও রিসোর্স তৈরি করতে অনুপ্রাণিত করবে।",
+      supportBtn: "Buy Me a Coffee"
     },
     educationSection: {
+      subtitle: "আমার",
       titlePrefix: "শিক্ষাগত",
-      titleHighlight: "যোগ্যতা",
-      items: [
+      titleHighlight: "পটভূমি",
+      tabAll: "সকল",
+      tabAcademic: "একাডেমিক",
+      tabOnline: "অনলাইন কোর্স",
+      academicItems: [
         {
-          degree: "বিএসসি ইন কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং",
-          institution: "ঢাকা বিশ্ববিদ্যালয় অধিভুক্ত প্রতিষ্ঠান",
-          location: "ঢাকা, বাংলাদেশ",
-          period: "২০২০ - ২০২৪",
-          grade: "প্রথম শ্রেণি (ডিস্টিংশন)",
-          description: "ডেটা অ্যানালিটিক্স, পরিসংখ্যান, রিলেশনাল ডাটাবেস, অ্যালগরিদম ও আধুনিক ওয়েব সিস্টেমে বিশেষ গুরুত্ব।"
+          id: "diploma",
+          category: "academic",
+          degree: "Diploma in Computer Science & Technology",
+          institution: "দিনাজপুর পলিটেকনিক ইনস্টিটিউট",
+          period: "২০২২ – ২০২৬ (প্রত্যাশিত)",
+          location: "দিনাজপুর, বাংলাদেশ",
+          semester: "৮ম সেমিস্টার",
+          grade: "CGPA: ৩.৭৩ / ৪.০০",
+          status: "বর্তমানে অধ্যয়নরত",
+          badgeType: "polytechnic",
+          description:
+            "প্রোগ্রামিং, ডেটাবেস, ওয়েব ডেভেলপমেন্ট, নেটওয়ার্কিং এবং সফটওয়্যার ইঞ্জিনিয়ারিংয়ের মূল বিষয়গুলো নিয়ে ডিপ্লোমা অধ্যয়নরত। কোডিং ক্লাব এবং হ্যাকাথনে সক্রিয় অংশগ্রহণকারী।",
+          highlights: [
+            "সম্পন্ন সেমিস্টারগুলোতে ৪.০০ এর মধ্যে চমৎকার ৩.৭৩ সিজিপিএ অর্জন।",
+            "C, C++, Python, JavaScript এবং রিলেশনাল ডেটাবেস (SQL)-এ বাস্তব পারদর্শিতা।",
+            "MERN স্ট্যাক ওয়েব ডেভেলপমেন্ট এবং আধুনিক রেসপনসিভ ফ্রন্টএন্ড তৈরিতে বিশেষ পারদর্শী।",
+            "দলগত কাজ ও সমস্যা সমাধানে দক্ষ এবং দ্রুত নতুন প্রযুক্তি আয়ত্তকারী।",
+          ],
+          tags: [
+            "Web Development",
+            "Data Structures",
+            "Database Management",
+            "Networking",
+            "Software Engineering",
+            "C / C++",
+            "JavaScript",
+            "Python",
+          ],
         },
         {
-          degree: "উচ্চ মাধ্যমিক সার্টিফিকেট (এইচএসসি) - বিজ্ঞান",
-          institution: "ঢাকা শিক্ষা বোর্ড",
-          location: "ঢাকা, বাংলাদেশ",
-          period: "২০১৮ - ২০২০",
-          grade: "জিপিএ ৫.০০",
-          description: "উচ্চতর গণিত, পদার্থবিজ্ঞান, রসায়ন ও তথ্য ও যোগাযোগ প্রযুক্তি।"
-        }
-      ]
+          id: "ssc",
+          category: "academic",
+          degree: "Secondary School Certificate (SSC)",
+          institution: "পীরগঞ্জ মিউনিসিপ্যাল হাই স্কুল",
+          period: "২০২১",
+          location: "পীরগঞ্জ, রংপুর",
+          grade: "GPA: ৫.০০ / ৫.০০",
+          status: "পারফেক্ট স্কোর অর্জন 🏆",
+          badgeType: "school",
+          description:
+            "অসামান্য ফলাফলের সাথে মাধ্যমিক শিক্ষা সম্পন্ন। উচ্চতর গণিত ও পদার্থবিজ্ঞানসহ বিজ্ঞান বিভাগে জিপিএ ৫.০০ অর্জন।",
+          highlights: [
+            "বিজ্ঞান বিভাগে শতভাগ সাফল্যের সাথে গোল্ডেন জিপিএ ৫.০০ অর্জন।",
+            "উচ্চতর গণিত ও পদার্থবিজ্ঞানে চমৎকার অ্যাকাডেমিক দক্ষতা প্রদর্শন।",
+            "সমালোচনামূলক ও যৌক্তিক চিন্তাভাবনা, নিয়মানুবর্তিতা এবং বৈজ্ঞানিক সমস্যা সমাধান দক্ষতা অর্জন।",
+          ],
+          tags: [
+            "Mathematics",
+            "Physics",
+            "Chemistry",
+            "Higher Math",
+            "General Science",
+            "ICT",
+          ],
+        },
+        {
+          id: "jsc",
+          category: "academic",
+          degree: "Junior School Certificate (JSC)",
+          institution: "পীরগঞ্জ মিউনিসিপ্যাল হাই স্কুল",
+          period: "২০১৮",
+          location: "পীরগঞ্জ, রংপুর",
+          grade: "GPA: ৪.৮৬ / ৫.০০",
+          status: "উচ্চ কৃতিত্বপূর্ণ ফলাফল",
+          badgeType: "school",
+          description:
+            "চমৎকার ফলাফলের সাথে জুনিয়র স্কুল শিক্ষা সম্পন্ন। বিভিন্ন অ্যাকাডেমিক প্রতিযোগিতা ও সহশিক্ষামূলক কার্যক্রমে অংশগ্রহণ।",
+          highlights: [
+            "জিপিএ ৪.৮৬ পেয়ে কৃতিত্বপূর্ণ ফলাফল অর্জন ও পড়াশোনায় ধারাবাহিক নিষ্ঠা প্রদর্শন।",
+            "বিদ্যালয়ের বিভিন্ন বিতর্ক প্রতিযোগিতা ও সহশিক্ষামূলক কার্যক্রমে সক্রিয় অংশগ্রহণ।",
+            "বিজ্ঞান, গণিত এবং ইংরেজি যোগাযোগে দৃঢ় অ্যাকাডেমিক ভিত্তি স্থাপন।",
+          ],
+          tags: [
+            "General Science",
+            "Mathematics",
+            "English",
+            "Bengali",
+            "Analytical Thinking",
+          ],
+        },
+      ],
+      onlineItems: [
+        {
+          id: "phero-web-dev",
+          category: "online",
+          degree: "Complete Web Development",
+          institution: "Programming Hero",
+          period: "২০২৪",
+          location: "অনলাইন",
+          status: "সার্টিফিকেট অব কমপ্লিশন উইথ এক্সিলেন্স 🏆",
+          badgeType: "phero",
+          hasCertificate: true,
+          certFile: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          description:
+            "প্রোগ্রামিং হিরো থেকে আধুনিক জাভাস্ক্রিপ্ট, রেসপনসিভ ডিজাইন, রিঅ্যাক্ট ফ্রন্টএন্ড আর্কিটেকচার, ব্যাকএন্ড রেস্ট এপিআই ও ডেটাবেস ইঞ্জিনিয়ারিংসহ নিবিড় ফুল-স্ট্যাক ওয়েব ডেভেলপমেন্ট সফলভাবে সম্পন্ন।",
+          highlights: [
+            "HTML5, আধুনিক CSS3, রেসপনসিভ লেআউট এবং Tailwind CSS ফ্রেসওয়ার্কে পূর্ণ দক্ষতা অর্জন।",
+            "React.js, React Router এবং কনটেক্সট স্টেট ব্যবহার করে রেসপনসিভ SPA তৈরি।",
+            "Node.js, Express.js ও MongoDB ডেটাবেস দিয়ে স্কেলেবল ব্যাকএন্ড ওয়েব সার্ভিস তৈরি।",
+            "ব্যাচ ১০ থেকে এক্সিলেন্স সার্টিফিকেশন অর্জন (স্টুডেন্ট আইডি: WEB10-2954)।",
+          ],
+          tags: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "REST APIs",
+            "Full Stack",
+          ],
+        },
+        {
+          id: "python-beginners",
+          category: "online",
+          degree: "Python for Beginners",
+          institution: "MySirG.com",
+          period: "জানুয়ারি ২০২৫ – ফেব্রুয়ারি ২০২৫",
+          location: "অনলাইন",
+          status: "ভেরিফাইড ক্রেডেনশিয়াল",
+          badgeType: "avatar2",
+          hasCertificate: false,
+          description:
+            "MySirG.com থেকে পাইথন প্রোগ্রামিং কোর্স সম্পন্ন, যেখানে কোডিং বেসিকস, ডেটা স্ট্রাকচার ও বাস্তব সমস্যা সমাধানের ওপর ভিত্তি স্থাপন করা হয়েছে।",
+          highlights: [
+            "পাইথন সিনট্যাক্স, ভ্যারিয়েবল, ডেটা স্ট্রাকচার এবং কোর ডেটা টাইপস আয়ত্তকরণ।",
+            "লুপ, কন্ডিশনাল এবং এক্সেপশন হ্যান্ডলিংয়ের সফল বাস্তবায়ন।",
+            "মডুলার ফাংশন, ফাইল হ্যান্ডলিং এবং অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (OOP) ধারণা অর্জন।",
+            "যৌক্তিক চিন্তাভাবনা বাড়াতে প্র্যাকটিক্যাল কোডিং ও অ্যালগরিদম অনুশীলন।",
+          ],
+          tags: [
+            "Python",
+            "Control Structures",
+            "Data Types",
+            "OOP",
+            "Problem Solving",
+            "File Handling",
+          ],
+        },
+        {
+          id: "data-analysis-python",
+          category: "online",
+          degree: "Data Analysis with Python",
+          institution: "IBM",
+          period: "জানুয়ারি ২০২৬",
+          location: "অনলাইন",
+          status: "ভেরিফাইড ক্রেডেনশিয়াল",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "IBM থেকে ডেটা অ্যানালিসিস উইথ পাইথন সার্টিফিকেশন সম্পন্ন, ডেটা ক্লিনিং, স্ট্যাটিস্টিক্যাল মডেলিং এবং অ্যানালিটিক্যাল পাইপলাইন নির্মাণে দক্ষতা প্রদর্শন।",
+          highlights: [
+            "Pandas এবং NumPy ব্যবহার করে বাস্তব ডেটাসেট ক্লিনিং ও প্রিপ্রসেসিং।",
+            "এক্সপ্লোরেটরি ডেটা অ্যানালিসিস (EDA) এবং ডেসক্রিপটিভ স্ট্যাটিস্টিকস তৈরি।",
+            "সঠিক সিদ্ধান্ত গ্রহণের জন্য প্রেডিক্টিভ মডেল ও ডেটা রূপান্তর তৈরি।",
+          ],
+          tags: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Data Cleaning",
+            "Statistical Modeling",
+            "Data Analysis",
+          ],
+        },
+        {
+          id: "data-vis-python",
+          category: "online",
+          degree: "Data Visualization with Python",
+          institution: "IBM",
+          period: "ডিসেম্বর ২০২৫",
+          location: "অনলাইন",
+          status: "ভেরিফাইড ক্রেডেনশিয়াল",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "IBM থেকে ডেটা ভিজ্যুয়ালাইজেশন সম্পন্ন, চার্ট, ড্যাশবোর্ড ও ভিজ্যুয়াল ডেটা স্টোরিটেলিংয়ে বিশেষ পারদর্শিতা।",
+          highlights: [
+            "Matplotlib ও Seaborn ব্যবহার করে জটিল মাল্টি-ডাইমেনশনাল ডেটাসেট ভিজ্যুয়ালাইজ করা।",
+            "হাই-কোয়ালিটি প্লট, বার চার্ট, হিটম্যাপ এবং ট্রেন্ড প্রজেকশন তৈরি।",
+            "স্টেকহোল্ডারদের কাছে ইনসাইটস তুলে ধরার জন্য ভিজ্যুয়াল স্টোরিটেলিং প্রয়োগ।",
+          ],
+          tags: [
+            "Matplotlib",
+            "Seaborn",
+            "Data Visualization",
+            "Dashboards",
+            "Visual Storytelling",
+          ],
+        },
+        {
+          id: "power-bi",
+          category: "online",
+          degree: "Power BI Specialist",
+          institution: "SkillCourse",
+          period: "নভেম্বর ২০২৪",
+          location: "অনলাইন",
+          status: "ভেরিফাইড ক্রেডেনশিয়াল",
+          badgeType: "avatar1",
+          hasCertificate: false,
+          description:
+            "SkillCourse থেকে Power BI সার্টিফিকেশন অর্জন, রিলেশনাল ডেটা মডেলিং, কাস্টম DAX মেজার তৈরি ও ইন্টারেক্টিভ ড্যাশবোর্ডে দক্ষতা।",
+          highlights: [
+            "স্টার-স্কিমা ডেটা মডেল তৈরি এবং Power Query দিয়ে ETL পাইপলাইন অপ্টিমাইজেশন।",
+            "KPI, গ্রোথ বিশ্লেষণ এবং ডাইনামিক ফিল্টারের জন্য জটিল DAX ফর্মুলা তৈরি।",
+            "ড্রিল-ডাউন এবং ক্রস-ফিল্টারিং সহ রেসপনসিভ এক্সিকিউটিভ ড্যাশবোর্ড ডিজাইন।",
+          ],
+          tags: [
+            "Power BI",
+            "DAX Formulas",
+            "Data Modeling",
+            "Business Intelligence",
+            "Interactive Dashboards",
+          ],
+        },
+        {
+          id: "sql-data-science",
+          category: "online",
+          degree: "SQL for Data Science",
+          institution: "University of California (UC Davis)",
+          period: "অক্টোবর ২০২৪",
+          location: "অনলাইন",
+          status: "ভেরিফাইড ক্রেডেনশিয়াল",
+          badgeType: "school",
+          hasCertificate: false,
+          description:
+            "জটিল জয়েন, অ্যাগ্রিগেশন এবং কুয়েরি পারফরম্যান্স অপ্টিমাইজেশনের ওপর অ্যাডভান্সড SQL রিলেশনাল ডেটাবেস কুয়েরি ও ইনডেক্সিং সার্টিফিকেশন সম্পন্ন।",
+          highlights: [
+            "মাল্টি-টেবিল জয়েন, উইন্ডো ফাংশন ও সাবকুয়েরি সমন্বিত উন্নত SQL কুয়েরি প্রণয়ন।",
+            "রিলেশনাল স্কিমা ডিজাইন, কনস্ট্রেইন্ট স্থাপন ও ইনডেক্সিং কৌশল প্রয়োগ।",
+            "অ্যানালিটিক্স ও ব্যাকএন্ড ইন্টিগ্রেশনের জন্য বড় ডেটাসেট এক্সট্রাক্ট ও ফিল্টার করা।",
+          ],
+          tags: [
+            "SQL",
+            "PostgreSQL",
+            "Relational Databases",
+            "Indexing",
+            "Query Optimization",
+            "Data Modeling",
+          ],
+        },
+      ],
     },
     techStackSection: {
-      titlePrefix: "প্রযুক্তিগত",
+      subtitle: "এক্সপ্লোর",
+      titlePrefix: "আমার",
       titleHighlight: "টেক স্ট্যাক",
-      categories: [
+      tabAll: "সকল",
+      tabFrontend: "ফ্রন্টএন্ড",
+      tabBackend: "ব্যাকএন্ড",
+      tabDatabase: "ডাটাবেস",
+      tabShopify: "শপিফাই",
+      tabTools: "টুলস",
+      skills: [
         {
-          title: "ডেটা বিশ্লেষণ ও ভিজ্যুয়ালাইজেশন",
-          skills: ["Power BI", "Microsoft Excel (Advanced)", "Tableau", "Matplotlib", "Seaborn", "DAX Formulas"]
+          id: "react",
+          name: "React.js",
+          category: "frontend",
+          percentage: 90,
+          iconId: "react",
         },
         {
-          title: "প্রোগ্রামিং ল্যাঙ্গুয়েজ ও ফ্রেমওয়ার্ক",
-          skills: ["Python", "SQL (PostgreSQL / MySQL)", "JavaScript / React", "Pandas", "NumPy", "Scikit-Learn"]
+          id: "javascript",
+          name: "JavaScript",
+          category: "frontend",
+          percentage: 92,
+          iconId: "javascript",
         },
         {
-          title: "ডাটাবেস ও ইটিএল",
-          skills: ["PostgreSQL", "MySQL", "Data Cleaning", "Data Modeling", "ETL Pipelines", "Query Optimization"]
+          id: "typescript",
+          name: "TypeScript",
+          category: "frontend",
+          percentage: 80,
+          iconId: "typescript",
         },
         {
-          title: "টুলস ও এনভায়রনমেন্ট",
-          skills: ["Jupyter Notebook", "VS Code", "Git & GitHub", "Google Colab", "Tailwind CSS", "Linux Shell"]
-        }
-      ]
+          id: "nextjs",
+          name: "Next.js",
+          category: "frontend",
+          percentage: 82,
+          iconId: "nextjs",
+        },
+        {
+          id: "nodejs",
+          name: "Node.js",
+          category: "backend",
+          percentage: 85,
+          iconId: "nodejs",
+        },
+        {
+          id: "express",
+          name: "Express.js",
+          category: "backend",
+          percentage: 88,
+          iconId: "express",
+        },
+        {
+          id: "mongodb",
+          name: "MongoDB",
+          category: "database",
+          percentage: 85,
+          iconId: "mongodb",
+        },
+        {
+          id: "tailwind",
+          name: "Tailwind CSS",
+          category: "frontend",
+          percentage: 95,
+          iconId: "tailwind",
+        },
+        {
+          id: "firebase",
+          name: "Firebase",
+          category: "backend",
+          percentage: 80,
+          iconId: "firebase",
+        },
+        {
+          id: "git",
+          name: "Git",
+          category: "tools",
+          percentage: 88,
+          iconId: "git",
+        },
+        {
+          id: "html5",
+          name: "HTML5",
+          category: "frontend",
+          percentage: 95,
+          iconId: "html5",
+        },
+        {
+          id: "css3",
+          name: "CSS3",
+          category: "frontend",
+          percentage: 92,
+          iconId: "css3",
+        },
+        {
+          id: "shopify",
+          name: "Shopify",
+          category: "shopify",
+          percentage: 90,
+          iconId: "shopify",
+        },
+        {
+          id: "liquid",
+          name: "Shopify Liquid",
+          category: "shopify",
+          percentage: 88,
+          iconId: "liquid",
+        },
+        {
+          id: "github",
+          name: "GitHub",
+          category: "tools",
+          percentage: 90,
+          iconId: "github",
+        },
+        {
+          id: "redux",
+          name: "Redux",
+          category: "frontend",
+          percentage: 82,
+          iconId: "redux",
+        },
+      ],
     },
     experienceSection: {
       titlePrefix: "কাজের",
       titleHighlight: "অভিজ্ঞতা",
       items: [
         {
-          role: "ডেটা অ্যানালিস্ট ও সফটওয়্যার ফেলো",
-          company: "ডেটা টেক ইনোভেশনস",
-          period: "২০২৩ - বর্তমান",
-          type: "পেশাদার অভিজ্ঞতা",
+          role: "Frontend & Jr. Shopify Developer",
+          company: "Scaleup Ads Agency (Betopia Group)",
+          location: "ঢাকা, বাংলাদেশ",
+          period: "ডিসেম্বর ২০২৫ – বর্তমান",
+          type: "পূর্ণকালীন",
+          logo: "/betopia.png",
           highlights: [
-            "বিভিন্ন উৎস থেকে ডেটাসেট বিশ্লেষণ করে এক্সিকিউটিভ পাওয়ার বিআই ড্যাশবোর্ড তৈরি ও ব্যবসায়িক সুযোগ শনাক্তকরণ।",
-            "বিশাল ডেটাসেটে অপ্টিমাইজড এসকিউএল কোয়েরি তৈরি করে ডেটা এক্সট্রাকশন টাইম ৩৫% হ্রাস।",
-            "টিমের সাথে সমন্বয় করে সাপ্তাহিক ও মাসিক কেপিআই রিপোর্টিং অটোমেশন নিশ্চিতকরণ।"
-          ]
+            "Shopify Liquid, HTML, CSS ও JavaScript ব্যবহার করে Shopify স্টোর ডেভেলপ ও কাস্টমাইজ করা।",
+            "Shopify থিম ও স্টোরফ্রন্ট রিডিজাইন করে রেসপনসিভ ও ইউজার-ফ্রেন্ডলি অভিজ্ঞতা নিশ্চিত করা।",
+            "প্রোডাক্ট পেজ, কালেকশন পেজ, নেভিগেশন, কার্ট ফাংশনালিটি ও থিম সেকশন কাস্টমাইজ করা।",
+            "ফ্রন্টএন্ড সমস্যা সমাধান এবং ক্লায়েন্টের চাহিদা অনুযায়ী Shopify ফিচার ও অ্যাপ ইন্টিগ্রেশন সম্পন্ন করা।",
+          ],
         },
         {
-          role: "ডেটা সায়েন্স প্রজেক্ট অ্যাসোসিয়েট",
-          company: "অ্যানালিটিক্স রিসার্চ ল্যাব",
-          period: "২০২২ - ২০২৩",
-          type: "প্রজেক্ট ফেলো",
+          role: "Sales Executive",
+          company: "MN Trade International",
+          location: "দিনাজপুর, বাংলাদেশ",
+          period: "জানুয়ারি ২০২২ – আগস্ট ২০২৫",
+          type: "পূর্ণকালীন",
           highlights: [
-            "পাইথন ও ক্লাস্টারিং অ্যালগরিদম ব্যবহার করে গ্রাহক আচরণ বিশ্লেষণের জন্য প্রেডিক্টিভ মডেল তৈরি।",
-            "অগোছালো কাঁচা ডেটাসেট নিয়ে বিস্তারিত এক্সপ্লোরেটরি ডেটা অ্যানালিসিস (EDA) ও ক্লিনিং পাইপলাইন তৈরি।"
-          ]
-        }
-      ]
+            "কোম্পানির গ্রাহক পরিসর বাড়াতে ক্লায়েন্ট রিলেশনশিপ ও বিজনেস ডেভেলপমেন্ট কার্যক্রম পরিচালনা করা।",
+            "মূল্য নির্ধারণ, ডেলিভারি শিডিউল ও বাণিজ্যিক শর্ত নিয়ে সাপ্লায়ার এবং বায়ারদের সাথে সমন্বয় করা।",
+            "আমদানি/রপ্তানি বাণিজ্য কার্যক্রমের সেলস রেকর্ড, রিপোর্ট ও ডকুমেন্টেশন প্রস্তুত ও রক্ষণাবেক্ষণ।",
+            "নতুন বিক্রয় সম্ভাবনা চিহ্নিত করতে বাজার প্রবণতা ও প্রতিযোগীদের কার্যক্রম পর্যবেক্ষণ করা।",
+            "সরাসরি ক্লায়েন্ট যোগাযোগ ও ব্যবসায়িক ডিল সফল করার মাধ্যমে শক্তিশালী যোগাযোগ ও নেগোসিয়েশন দক্ষতা তৈরি।",
+          ],
+        },
+      ],
     },
     portfolioSection: {
-      titlePrefix: "নির্বাচিত",
-      titleHighlight: "পোর্টফোলিও প্রজেক্টস",
+      subtitle: "এক নজরে দেখে নিন",
+      titlePrefix: "আমার",
+      titleHighlight: "প্রজেক্টসমূহ",
+      tabAll: "সকল",
+      tabFrontend: "ফ্রন্টএন্ড",
+      tabFullStack: "ফুল স্ট্যাক",
       items: [
         {
-          title: "গ্লোবাল সেলস ও প্রফিট ইন্টেলিজেন্স ড্যাশবোর্ড",
-          tag: "Power BI & SQL",
-          description: "৫ লক্ষাধিক গ্লোবাল ট্রানজ্যাকশন নিয়ে তৈরি মাল্টি-পেজ বিআই রিপোর্টিং সিস্টেম, ফোরকাস্টিং ও কেপিআই মেট্রিক্স সহ।",
-          tags: ["Power BI", "SQL", "DAX", "Data Modeling"]
+          id: "moviesphere",
+          title: "MovieSphere",
+          category: "frontend",
+          categoryName: "ফ্রন্টএন্ড",
+          iconType: "film",
+          description:
+            "একটি আধুনিক মুভি এক্সপ্লোরার ওয়েব অ্যাপ্লিকেশন। যেখানে ইউজাররা যেকোনো মুভি সার্চ করতে পারেন এবং TVMaze API-এর সাহায্যে তাৎক্ষণিক রেটিং, প্লট সামারি ও কাস্টের বিস্তারিত তথ্য দেখতে পান।",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "TVMaze API",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://movie-spheree.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/movie-explorer",
         },
         {
-          title: "ই-কমার্স কাস্টমার চার্ন প্রেডিকশন ইঞ্জিন",
-          tag: "Python & Machine Learning",
-          description: "গ্রাহক আচরণ বিশ্লেষণ করে চার্ন রিস্ক ৮৯% নির্ভুলতার সাথে পূর্বাভাস দেওয়ার জন্য মেশিন লার্নিং পাইপলাইন।",
-          tags: ["Python", "Pandas", "Scikit-Learn", "Matplotlib"]
+          id: "skywatch",
+          title: "SkyWatch Weather",
+          category: "frontend",
+          categoryName: "ফ্রন্টএন্ড",
+          iconType: "cloud",
+          description:
+            "লগইন ছাড়াই ঝামেলাহীন লাইভ ওয়েদার ফোরকাস্ট অ্যাপ। ইউজাররা যেকোনো লোকেশনের আবহাওয়া এবং লাইভ জিপিএস ব্যবহার করে আবহাওয়া অনুযায়ী ছাতা বা পানির বোতল নেওয়ার মতো স্মার্ট রিকমেন্ডেশন পেয়ে থাকেন।",
+          tags: [
+            "React.js",
+            "Tailwind CSS",
+            "Open-Meteo API",
+            "Geolocation",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://sky-watch-webapp.netlify.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111/SkyWatch-weather-app",
         },
         {
-          title: "রিয়েল-টাইম ফাইন্যান্সিয়াল সেন্টিমেন্ট ও মার্কেট ট্রেন্ডস",
-          tag: "Data Scraping & NLP",
-          description: "খবরের হেডলাইন ও টুইটার ফিড স্ক্র্যাপ করে বিনিয়োগকারীদের মানসিক অবস্থা বিশ্লেষণের জন্য অটোমেটেড ইটিএল।",
-          tags: ["Python", "BeautifulSoup", "NLTK", "Plotly"]
-        }
-      ]
+          id: "badal-portfolio",
+          title: "Digital Marketer Portfolio",
+          category: "frontend",
+          categoryName: "ফ্রন্টএন্ড",
+          iconType: "briefcase",
+          description:
+            "একজন ডিজিটাল মার্কেটারের জন্য নির্মিত আকর্ষণীয় পোর্টফোলিও ওয়েবসাইট। এতে রয়েছে মার্কেটিং স্ট্র্যাটেজি, কেস স্টাডিজ, ক্যাম্পেইন পারফরম্যান্স মেট্রিক্স এবং ক্লায়েন্ট যোগাযোগের সহজ ফর্ম।",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "Netlify",
+            "Responsive UI",
+          ],
+          liveUrl: "https://badal-islam.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/Portfolio",
+        },
+        {
+          id: "blood-donation",
+          title: "Blood Donation Application",
+          category: "fullstack",
+          categoryName: "ফুল স্ট্যাক",
+          iconType: "heart",
+          description:
+            "রক্তদাতা ও গ্রহীতার মধ্যে দ্রুত সংযোগ স্থাপনের জন্য তৈরি একটি পরিপূর্ণ প্ল্যাটফর্ম। এতে রয়েছে ডোনার রেজিস্ট্রেশন, জরুরি রক্তের রিকোয়েস্ট তৈরি, লাইভ স্ট্যাটাস এবং লোকেশনভিত্তিক ডোনার সার্চ।",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+          liveUrl: "https://blood-donation-c92df.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=bloo&type=&language=&sort=",
+        },
+        {
+          id: "marathon-system",
+          title: "Marathon Management System",
+          category: "fullstack",
+          categoryName: "ফুল স্ট্যাক",
+          iconType: "trophy",
+          description:
+            "ম্যারাথন ইভেন্ট ব্যবস্থাপনার একটি পূর্ণাঙ্গ ওয়েব সিস্টেম। যেখানে রেজিস্ট্রেশন, ইভেন্ট শিডিউল, রিয়েল-টাইম ট্র্যাকিং, লাইভ রেজাল্ট ম্যানেজমেন্ট এবং স্বয়ংক্রিয় ডিজিটাল সার্টিফিকেট প্রদান অন্তর্ভুক্ত রয়েছে।",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Full Stack"],
+          liveUrl: "https://marathon-client-side.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=A-11-ma&type=&language=&sort=",
+        },
+        {
+          id: "bpl-playdraft",
+          title: "BPL PlayDraft",
+          category: "frontend",
+          categoryName: "ফ্রন্টএন্ড",
+          iconType: "gamepad",
+          description:
+            "বাংলাদেশ প্রিমিয়ার লিগ (BPL)-এর ফ্যান্টাসি ক্রিকেট ড্রাফট প্ল্যাটফর্ম। যেখানে ইউজাররা বাজেট অনুযায়ী প্লেয়ার সিলেক্ট করে ড্রাফট স্কোয়াড তৈরি, টিম পরিচালনা এবং লিডারবোর্ড দেখতে পারেন।",
+          tags: [
+            "React.js",
+            "JavaScript",
+            "Tailwind CSS",
+            "DaisyUI",
+            "State Management",
+          ],
+          liveUrl: "https://dream-bpl-bpl-draft-website-a-07.surge.sh/",
+          githubUrl: "https://github.com/abdullahalmamun111/BPL-PlayDraft-2024",
+        },
+      ],
     },
     servicesSection: {
-      titlePrefix: "বিশেষায়িত",
+      subtitle: "যেসব সেবার জন্য আমাকে যুক্ত করতে পারেন",
+      titlePrefix: "ওয়েব ও শপিফাই",
       titleHighlight: "সেবাসমূহ",
-      items: [
+      introP1:
+        "আমি একজন জুনিয়র শপিফাই ডেভেলপার এবং ফুল-স্ট্যাক ডেভেলপার, যার শপিফাই স্টোর ডেভেলপমেন্ট, থিম কাস্টমাইজেশন, স্টোরফ্রন্ট রিডিজাইন এবং MERN স্ট্যাক ওয়েব ইঞ্জিনিয়ারিংয়ে ৮.৫+ মাসের বাস্তব অভিজ্ঞতা রয়েছে। নতুন স্টোর তৈরি থেকে শুরু করে স্কেলেবল ওয়েব অ্যাপ্লিকেশন নির্মাণে আমি প্রতিটি প্রজেক্টকে সফল রূপদানে সচেষ্ট।",
+      introP2: "আমার সাথে কাজ করতে আগ্রহী হলে,",
+      whatsappCta: "এখনই ক্লিক করে সরাসরি WhatsApp-এ যোগাযোগ করতে পারেন।",
+      testimonialsTitlePrefix: "ক্লায়েন্ট",
+      testimonialsTitleHighlight: "টেস্টিমোনিয়াল",
+      testimonials: [
         {
-          title: "ইন্টারেক্টিভ বিআই ড্যাশবোর্ড ডেভেলপমেন্ট",
-          description: "ডাইনামিক ডিএএক্স (DAX) মেট্রিক্স, স্বয়ংক্রিয় ড্রিল-ডাউন এবং এক্সিকিউটিভ ভিজ্যুয়াল রিপোর্টিং তৈরি।"
+          id: 1,
+          quote:
+            "আব্দুল্লাহ আমাদের শপিফাই স্টোরের প্রোডাক্ট ও কালেকশন পেজ অসাধারণভাবে কাস্টমাইজ করেছেন। সাইটের স্পিড ও মোবাইল কনভার্সন অনেক বেড়েছে।",
+          name: "ডেভিড মিলার",
+          role: "ই-কমার্স ফাউন্ডার",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "ডেটা ক্লিনিং ও প্রি-প্রসেসিং",
-          description: "অগোছালো ব্যবসায়িক ডেটাকে সুশৃঙ্খল ও বিশ্লেষণোপযোগী কাঠামোগত ডেটায় রূপান্তর।"
+          id: 2,
+          quote:
+            "চমৎকার ফুল-স্ট্যাক কাজ! React ও Node.js দিয়ে নির্ধারিত সময়ে আমাদের প্রজেক্ট সফলভাবে সম্পন্ন করেছেন। কোডিং কোয়ালিটি ও কমিউনিকেশন প্রশংসনীয়।",
+          name: "সারাহ জেনকিন্স",
+          role: "প্রোডাক্ট ম্যানেজার",
+          avatar:
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "অ্যাডভান্সড এক্সেল অটোমেশন ও মডেলিং",
-          description: "জটিল ফাইন্যান্সিয়াল মডেলিং, অটোমেটেড পিভট টেবিল ও পাওয়ার কোয়েরি ম্যাক্রো তৈরি।"
+          id: 3,
+          quote:
+            "দারুণ প্রবলেম-সলভিং স্কিল! আমাদের শপিফাই লিকুইড কোডের জটিল সমস্যাগুলো খুব দ্রুত সমাধান করেছেন এবং প্রয়োজনীয় অ্যাপ ইন্টিগ্রেট করে দিয়েছেন।",
+          name: "অ্যালেক্স রহমান",
+          role: "মার্কেটিং ডিরেক্টর",
+          avatar:
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        },
+      ],
+      whatIDoTitlePrefix: "আমি যা",
+      whatIDoTitleHighlight: "করি",
+      workflow: [
+        {
+          id: 1,
+          titlePrefix: "Shopify স্টোর",
+          titleSuffix: "সেটআপ ও রিডিজাইন",
+          percentage: 95,
+          desc: "সম্পূর্ণ নতুন স্টোর তৈরি, থিম রিডিজাইন এবং সর্বোচ্চ বিক্রয় নিশ্চিতকরণ লেআউট।",
+          iconType: "store",
         },
         {
-          title: "প্রেডিক্টিভ অ্যানালিটিক্স ও মেশিন লার্নিং",
-          description: "পাইথন ও স্ট্যাটিস্টিক্যাল অ্যালগরিদম ব্যবহার করে প্যাটার্ন উন্মোচন ও ভবিষ্যৎ প্রবণতার পূর্বাভাস।"
-        }
-      ]
+          id: 2,
+          titlePrefix: "Liquid ও থিম",
+          titleSuffix: "কাস্টমাইজেশন",
+          percentage: 90,
+          desc: "শপিফাই লিকুইড কোড, প্রোডাক্ট পেজ, ডায়নামিক সেকশন এবং কার্ট ফিচার কাস্টমাইজেশন।",
+          iconType: "liquid",
+        },
+        {
+          id: 3,
+          titlePrefix: "ফুল-স্ট্যাক ওয়েব",
+          titleSuffix: "ডেভেলপমেন্ট",
+          percentage: 85,
+          desc: "React.js, Node.js, Express এবং MongoDB দিয়ে ডায়নামিক স্কেলেবল ওয়েব অ্যাপ নির্মাণ।",
+          iconType: "mern",
+        },
+        {
+          id: 4,
+          titlePrefix: "রেসপনসিভ",
+          titleSuffix: "UI/UX ডিজাইন",
+          percentage: 95,
+          desc: "Figma ডিজাইন থেকে পিক্সেল-পারফেক্ট, মোবাইল-ফার্স্ট রেসপনসিভ ওয়েব ইন্টারফেস তৈরি।",
+          iconType: "ui",
+        },
+        {
+          id: 5,
+          titlePrefix: "Shopify অ্যাপস ও",
+          titleSuffix: "এপিআই ইন্টিগ্রেশন",
+          percentage: 85,
+          desc: "প্রয়োজনীয় শপিফাই অ্যাপ সেটআপ, পেমেন্ট গেটওয়ে ও থার্ড-পার্টি ফিচার সংযোগ।",
+          iconType: "apps",
+        },
+        {
+          id: 6,
+          titlePrefix: "বাগ ফিক্সিং ও",
+          titleSuffix: "অপ্টিমাইজেশন",
+          percentage: 90,
+          desc: "ফ্রন্টএন্ড এরর সমাধান, স্টোর লোডিং স্পিড বৃদ্ধি এবং ইউজার ফ্রেন্ডলি অভিজ্ঞতা নিশ্চিতকরণ।",
+          iconType: "troubleshoot",
+        },
+      ],
     },
-    updatesSection: {
+updatesSection: {
+      subtitle: "এক নজরে দেখে নিন আমার",
       titlePrefix: "সাম্প্রতিক",
-      titleHighlight: "আপডেটস ও ফিড",
+      titleHighlight: "আপডেটস",
+      stats: [
+        { id: 1, value: "৮৫০+", label: "কাপ কফি পান", iconType: "coffee" },
+        { id: 2, value: "৮৫,০০০+", label: "লাইনের বেশি কোড", iconType: "code" },
+        { id: 3, value: "অসীম", label: "শেখার আগ্রহ", iconType: "heart" },
+        { id: 4, value: "১৪+", label: "প্রজেক্ট ও স্টোর সম্পন্ন", iconType: "store" }
+      ],
+      timelineTitlePrefix: "জীবনের",
+      timelineTitleHighlight: "আপডেটস",
+      moreText: "বিস্তারিত",
+      moreHighlight: "দেখুন",
       items: [
         {
-          date: "সেপ্টেম্বর ২০২৬",
-          title: "অ্যাডভান্সড ডেটা ইঞ্জিনিয়ারিং স্পেশালাইজেশন সম্পন্ন",
-          tag: "মাইলফলক",
-          body: "পোস্টগ্রেসকিউএল অপ্টিমাইজেশন, ইটিএল পাইপলাইন আর্কিটেকচার ও ক্লাউড ডেটা ওয়ার্কফ্লোতে দক্ষতা অর্জন।"
+          id: 1,
+          titlePrefix: "বর্তমানে কাজ করছি",
+          titleHighlight: "Shopify স্টোরফ্রন্ট ও ক্লায়েন্ট প্রজেক্টে",
+          org: "Scaleup Ads Agency (Betopia Group)",
+          location: "ঢাকা, বাংলাদেশ",
+          date: "ডিসেম্বর ২০২৫ – বর্তমান",
+          desc: "সফলতার সাথে ক্লায়েন্টদের জন্য Shopify স্টোর ডেভেলপ ও কাস্টমাইজ করছি। Shopify Liquid, কাস্টম থিম সেকশন, রেসপনসিভ ডিজাইন, কার্ট কার্যকারিতা এবং থার্ড-পার্টি অ্যাপ ইন্টিগ্রেশনের ওপর কাজ পরিচালনা করছি।",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "আগস্ট ২০২৬",
-          title: "ওপেন সোর্স পাওয়ার বিআই টেমপ্লেট লাইব্রেরি প্রকাশ",
-          tag: "কমিউনিটি",
-          body: "এক্সিকিউটিভ রিপোর্টিংয়ের জন্য মিনিমালিস্টিক থিম প্যালেট ও ডিএএক্স মেজারের পুনর্ব্যবহারযোগ্য সংগ্রহ উন্মুক্ত।"
+          id: 2,
+          titlePrefix: "তৈরি করছি আধুনিক",
+          titleHighlight: "ফুল-স্ট্যাক MERN ওয়েব অ্যাপ্লিকেশন",
+          org: "পার্সোনাল ও ফ্রিল্যান্স প্রজেক্ট",
+          location: "ঢাকা, বাংলাদেশ",
+          date: "জুলাই ২০২৫ – অক্টোবর ২০২৫",
+          desc: "React.js, Tailwind CSS, Node.js, Express এবং MongoDB দিয়ে পূর্ণাঙ্গ ও স্কেলেবল ওয়েব অ্যাপ্লিকেশন তৈরি করেছি। এতে সিকিউর অথেনটিকেশন, রেস্ট এপিআই ও ডায়নামিক ফিচার বাস্তবায়ন অন্তর্ভুক্ত ছিল।",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "জুলাই ২০২৬",
-          title: "গ্লোবাল হেলথ ট্রেন্ডের ওপর এক্সপ্লোরেটরি ডেটা অ্যানালিসিস",
-          tag: "রিসার্চ",
-          body: "হু (WHO) ডেটাসেট নিয়ে পাইথন ও সিবর্ন ব্যবহারের মাধ্যমে গুরুত্বপূর্ণ অন্তর্দৃষ্টি প্রকাশ।"
+          id: 3,
+          titlePrefix: "উন্নত দক্ষতা অর্জন",
+          titleHighlight: "Shopify Liquid ও থিম আর্কিটেকচারে",
+          org: "Shopify পার্টনার কমিউনিটি",
+          location: "অনলাইন",
+          date: "জানুয়ারি ২০২৫ – মার্চ ২০২৫",
+          desc: "Shopify Liquid সিনট্যাক্স, ফিল্টার, কাস্টম সেকশন স্কিমা এবং AJAX কার্ট এপিআই-এর ওপর বিশেষ দক্ষতা অর্জন, যা ফাস্ট লোডিং মোবাইল-বান্ধব ই-কমার্স অভিজ্ঞতা নিশ্চিত করে।",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
+        },
+        {
+          id: 4,
+          titlePrefix: "সফলভাবে সম্পন্ন",
+          titleHighlight: "ডিপ্লোমা ইন কম্পিউটার সায়েন্স অ্যান্ড টেকনোলজি",
+          org: "দিনাজপুর পলিটেকনিক ইনস্টিটিউট",
+          location: "দিনাজপুর, বাংলাদেশ",
+          date: "২০২২ – ২০২৬",
+          desc: "দিনাজপুর পলিটেকনিক ইনস্টিটিউট থেকে চমৎকার ফলাফল (সিজিপিএ: ৩.৭৩ / ৪.০০) সহ ডিপ্লোমা সম্পন্ন করেছি। যেখানে প্রোগ্রামিং, ডেটা স্ট্রাকচার, অ্যালগরিদম ও সফটওয়্যার ইঞ্জিনিয়ারিংয়ের মূল ভিত্তি তৈরি হয়েছে।",
+          links: {
+            github: "https://github.com/abdullahalmamun111"
+          }
         }
       ]
     },
     themes: {
-      light: "লাইট থিম",
-      dark: "ডার্ক থিম",
-      midnight: "মিডনাইট থিম"
+      light: "Light Theme",
+      dark: "Dark Theme",
+      midnight: "Midnight Theme",
     },
     actions: {
       downloadResume: "রিজুমে ডাউনলোড করুন",
@@ -651,15 +1799,15 @@ export const translations = {
       cursorDisabled: "ম্যাজিক কার্সার: নিষ্ক্রিয়",
       closeWindow: "উইন্ডো বন্ধ করুন",
       collapseSidebar: "সাইডবার লুকান",
-      expandSidebar: "সাইডবার খুলুন"
+      expandSidebar: "সাইডবার খুলুন",
     },
     preloader: {
       initializing: "ইনিশিয়ালাইজিং",
-      loadingAssets: "ইন্টারফেস লোড হচ্ছে",
-      buildingModules: "মডিউল প্রস্তুত হচ্ছে",
+      loadingAssets: "ইন্টারফেস অপ্টিমাইজ হচ্ছে",
+      buildingModules: "মডিউল লোড হচ্ছে",
       finalizing: "চূড়ান্ত করা হচ্ছে",
-      complete: "সম্পন্ন"
-    }
+      complete: "সম্পন্ন",
+    },
   },
   hi: {
     langName: "हिंदी",
@@ -667,13 +1815,13 @@ export const translations = {
     greeting: "नमस्ते...",
     name: "अब्दुल्लाह",
     surname: "अल मामून",
-    title: "फ्यूचर डेटा साइंटिस्ट",
-    badgeRole: "डेटा एनालिस्ट और डेवलपर",
+    title: "MERN Stack Developer",
+    badgeRole: "Jr. Shopify Developer & MERN Stack Dev",
     location: "ढाका, बांग्लादेश",
     email: "almamun6027@gmail.com",
-    linkedin: "लिंक्डइन",
+    linkedin: "LinkedIn",
     linkedinUrl: "https://www.linkedin.com/in/abdullah-dev67/",
-    github: "गिटहब",
+    github: "Github",
     githubUrl: "https://github.com/abdullahalmamun111",
     pronounceAudio: "Abdullah Al Mamun",
     nav: {
@@ -684,14 +1832,14 @@ export const translations = {
       portfolio: "पोर्टफोलियो",
       services: "सेवाएं",
       updates: "अपडेट्स",
-      contact: "संपर्क"
+      contact: "संपर्क",
     },
     aboutSection: {
-      taglinePrefix: "संक्षेप में",
-      taglineHighlight: "मेरे बारे में...",
-      p1: "मैं <strong class='font-bold text-[var(--color-text-primary)]'>अब्दुल्लाह अल मामून</strong>, एक <a href='#analytics' class='text-[var(--color-accent)] font-medium hover:underline'>डेटा एनालिस्ट और डेवलपर</a> हूँ, जिसकी सांख्यिकी, डेटा स्ट्रक्चर और <strong class='font-bold text-[var(--color-text-primary)]'>Python व SQL</strong> में मजबूत पकड़ है। <strong class='font-bold text-[var(--color-text-primary)]'>Excel व Power BI</strong> के माध्यम से डेटा विश्लेषण, डेटा क्लीनिंग और विज़ुअलाइज़ेशन में पूरी तरह कुशल। Pandas, NumPy और Matplotlib जैसी लाइब्रेरीज़ के साथ वास्तविक डेटासेट और प्रेडिक्टिव मॉडलिंग पर काम करने का अनुभव।",
-      p2: "उत्कृष्ट समस्या-समाधान कौशल, बारीकियों पर ध्यान और डेटा-संचालित निर्णय लेने के लिए ट्रेंड्स को समझने में गहरी रुचि। एक गतिशील टीम में योगदान देने और आधुनिक विकास के क्षेत्र में आगे बढ़ने के लिए तत्पर।",
-      p3: "आपके साथ सहयोग करने के लिए <strong class='font-bold text-[var(--color-text-primary)]'>उत्सुक हूँ!</strong>"
+      taglinePrefix: "एक समर्पित",
+      taglineHighlight: "Full Stack & Jr. Shopify Developer",
+      p1: "नमस्ते! मैं अब्दुल्लाह अल मामून हूँ, एक समर्पित Full Stack & Jr. Shopify Developer, जिसे शॉपिफ़ाई स्टोर डेवलपमेंट, कस्टम लिक्विड थीमिंग, स्टोरफ्रंट री-डिजाइन और MERN स्टैक इंजीनियरिंग में 8.5+ महीने का व्यावहारिक अनुभव है। मैंने दीनाजपुर पॉलिटेक्निक इंस्टीट्यूट से कंप्यूटर साइंस एंड टेक्नोलॉजी में डिप्लोमा इन इंजीनियरिंग सफलतापूर्वक पूरा किया है।",
+      p2: "मैं रिस्पॉन्सिव स्टोरफ्रंट, उत्पाद और संग्रह पृष्ठ, नेविगेशन और कार्ट कार्यक्षमता को कस्टमाइज़ करने में माहिर हूँ। शॉपिफ़ाई इकोसिस्टम के साथ-साथ मैं React.js, Node.js, Express और MongoDB का उपयोग करके आधुनिक फुल-स्टैक वेब एप्लिकेशन विकसित करता हूँ। मुझे समस्याओं को हल करना और नए डिजिटल समाधान बनाना पसंद है।",
+      p3: "मैं आपके साथ मिलकर काम करने के लिए उत्सुक हूँ!",
     },
     certSection: {
       titlePrefix: "मेरे",
@@ -699,45 +1847,74 @@ export const translations = {
       certs: [
         {
           id: 1,
-          titlePrefix: "Python",
-          titleSuffix: "for Beginners",
-          issuer: "MySirG.com से पायथन प्रमाणन अर्जित, प्रोग्रामिंग, समस्या-समाधान और व्यावहारिक अनुप्रयोग में प्रवीणता।",
-          date: "जनवरी 2025",
-          badgeType: "avatar2"
+          titlePrefix: "Complete Web",
+          titleSuffix: "Development",
+          issuer:
+            "2024 में Programming Hero से Complete Web Development कोर्स पूरा किया, जिसमें HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB और फुल-स्टैक डेवलपमेंट के सिद्धांत शामिल थे।",
+          date: "2024",
+          badgeType: "phero",
+          hasFile: true,
+          certFile: "/certificate-web-development.jpg",
+          certImage: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          issuerName: "Programming Hero",
         },
         {
           id: 2,
-          titlePrefix: "Data Analysis",
-          titleSuffix: "with Python",
-          issuer: "IBM से डेटा एनालिसिस विथ पायथन प्रमाणन पूरा किया, डेटा क्लीनिंग, विज़ुअलाइज़ेशन और विश्लेषण कौशल का प्रदर्शन।",
-          date: "जनवरी 2026",
-          badgeType: "ibm"
+          titlePrefix: "Python",
+          titleSuffix: "for Beginners",
+          issuer:
+            "MySirG.com से पायथन प्रमाणन प्राप्त किया, जिसमें प्रोग्रामिंग, समस्या समाधान और व्यावहारिक अनुप्रयोग विकास में दक्षता प्रदर्शित की।",
+          date: "जनवरी 2025",
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "MySirG.com",
         },
         {
           id: 3,
-          titlePrefix: "Data Visualization",
+          titlePrefix: "Data Analysis",
           titleSuffix: "with Python",
-          issuer: "IBM से डेटा विज़ुअलाइज़ेशन विथ पायथन पूरा किया, चार्ट, डैशबोर्ड और स्टोरीटेलिंग में मजबूत कौशल।",
-          date: "दिसंबर 2025",
-          badgeType: "ibm"
+          issuer:
+            "IBM से Data Analysis with Python प्रमाणन पूरा किया, जिसमें डेटा क्लीनिंग, विज़ुअलाइज़ेशन और विश्लेषण कौशल का प्रदर्शन किया।",
+          date: "जनवरी 2026",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 4,
-          titlePrefix: "Power BI",
-          titleSuffix: "Specialist",
-          issuer: "SkillCourse से Power BI प्रमाणीकरण प्राप्त, डेटा विज़ुअलाइज़ेशन, रिपोर्टिंग और इंटरैक्टिव डैशबोर्ड में विशेषज्ञता।",
-          date: "नवंबर 2024",
-          badgeType: "avatar1"
+          titlePrefix: "Data Visualization",
+          titleSuffix: "with Python",
+          issuer:
+            "IBM से Data Visualization with Python प्रमाणन पूरा किया, जिसमें चार्ट, डैशबोर्ड और स्टोरीटेलिंग में मजबूत कौशल दिखाया।",
+          date: "दिसंबर 2025",
+          badgeType: "ibm",
+          hasFile: false,
+          issuerName: "IBM",
         },
         {
           id: 5,
+          titlePrefix: "Power BI",
+          titleSuffix: "Specialist",
+          issuer:
+            "SkillCourse से Power BI प्रमाणन हासिल किया, जिसमें डेटा विज़ुअलाइज़ेशन, रिपोर्टिंग और इंटरैक्टिव डैशबोर्ड में विशेषज्ञता प्रदर्शित की।",
+          date: "नवंबर 2024",
+          badgeType: "avatar1",
+          hasFile: false,
+          issuerName: "SkillCourse",
+        },
+        {
+          id: 6,
           titlePrefix: "SQL for",
           titleSuffix: "Data Science",
-          issuer: "यूनिवर्सिटी ऑफ़ कैलिफ़ोर्निया से उन्नत रिलेशनल डेटाबेस क्वेरी और इंडेक्सिंग प्रमाणन।",
+          issuer:
+            "University of California से उन्नत SQL रिलेशनल डेटाबेस क्वेरी और इंडेक्सिंग प्रमाणन पूरा किया।",
           date: "अक्टूबर 2024",
-          badgeType: "avatar2"
-        }
-      ]
+          badgeType: "avatar2",
+          hasFile: false,
+          issuerName: "UC Davis",
+        },
+      ],
     },
     interestsSection: {
       titlePrefix: "व्यक्तिगत",
@@ -745,47 +1922,47 @@ export const translations = {
       items: [
         {
           id: 1,
-          highlight: "नई तकनीक",
-          rest: "सीखना",
-          desc: "डेटा क्षेत्र में उन्नत टूल्स और तकनीकों को निरंतर सीखते रहना।",
-          iconType: "searchChart"
+          highlight: "वेब एप्लिकेशन",
+          rest: "निर्माण",
+          desc: "MERN स्टैक का उपयोग करके डायनामिक और स्केलेबल फुल-स्टैक वेब एप्लिकेशन विकसित करना।",
+          iconType: "laptopCode",
         },
         {
           id: 2,
-          highlight: "समस्या",
-          rest: "समाधान",
-          desc: "तार्किक और विश्लेषणात्मक सोच का उपयोग करके जटिल समस्याओं को हल करना।",
-          iconType: "laptopCode"
+          highlight: "Shopify",
+          rest: "डेवलपमेंट",
+          desc: "Liquid, HTML, CSS और JS का उपयोग करके Shopify थीम्स, स्टोरफ्रंट और ई-कॉमर्स अनुभव को कस्टमाइज़ करना।",
+          iconType: "barChart",
         },
         {
           id: 3,
-          highlight: "डेटा के साथ",
-          rest: "काम करना",
-          desc: "डेटा से सार्थक अंतर्दृष्टि और पैटर्न निकालना।",
-          iconType: "barChart"
+          highlight: "React.js",
+          rest: "और फ्रंटएंड",
+          desc: "React.js, Tailwind CSS और आधुनिक डिज़ाइन सिस्टम के साथ इंटरैक्टिव और रिस्पॉन्सिव UI तैयार करना।",
+          iconType: "searchChart",
         },
         {
           id: 4,
-          highlight: "डैशबोर्ड",
-          rest: "डिजाइनिंग",
-          desc: "स्पष्ट और प्रभावी डेटा विज़ुअलाइज़ेशन के लिए इंटरैक्टिव डैशबोर्ड तैयार करना।",
-          iconType: "pieChart"
+          highlight: "समस्या",
+          rest: "समाधान",
+          desc: "तार्किक और विश्लेषणात्मक सोच का उपयोग करके जटिल प्रोग्रामिंग चुनौतियों को हल करना।",
+          iconType: "database",
         },
         {
           id: 5,
-          highlight: "SQL चुनौतियां",
-          rest: "हल करना",
-          desc: "क्वेरी कौशल सुधारने के लिए SQL चुनौतियों का अभ्यास और समाधान।",
-          iconType: "database"
+          highlight: "नई तकनीकें",
+          rest: "सीखना",
+          desc: "वेब डेवलपमेंट में नए टूल्स, फ्रेमवर्क और सर्वोत्तम प्रथाओं को लगातार सीखना।",
+          iconType: "pieChart",
         },
         {
           id: 6,
           highlight: "पोर्टफोलियो",
           rest: "डिजाइन",
-          desc: "प्रोजेक्ट्स और क्षमताओं को प्रदर्शित करने वाले आधुनिक पोर्टफोलियो बनाना।",
-          iconType: "heart"
-        }
-      ]
+          desc: "परियोजनाओं और क्षमताओं को प्रदर्शित करने वाले आधुनिक व आकर्षक पोर्टफोलियो बनाना।",
+          iconType: "heart",
+        },
+      ],
     },
     languagesSection: {
       titlePrefix: "भाषाएं",
@@ -794,182 +1971,714 @@ export const translations = {
         {
           id: "en",
           name: "English",
-          proficiency: "Fluent / Professional",
+          proficiency: "A2 level",
           desc: "उत्कृष्ट संचार, प्रस्तुति और तकनीकी लेखन कौशल के साथ धाराप्रवाह वक्ता।",
-          flag: "us"
+          flag: "us",
         },
         {
           id: "bn",
-          name: "Bengali (বাংলা)",
-          proficiency: "Native (মাতৃভাষা)",
-          desc: "मातृभाषा, पेशेवर और मौखिक संचार में पूर्ण प्रवाह।",
-          flag: "bd"
-        }
-      ]
+          name: "Bengali",
+          proficiency: "Native",
+          desc: "मातृभाषा; पेशेवर, मौखिक और औपचारिक बंगाली भाषा पर पूर्ण अधिकार।",
+          flag: "bd",
+        },
+      ],
     },
-    contactSection: {
+contactSection: {
+      subtitle: "बिना किसी संकोच के",
       titlePrefix: "संपर्क",
       titleHighlight: "करें",
-      cardTitle: "आइए जुड़ें और साथ मिलकर काम करें",
-      cardDesc: "डेटा एनालिटिक्स, सॉफ्टवेयर डेवलपमेंट और फ्रीलांस प्रोजेक्ट्स के लिए हमेशा तैयार।",
-      emailLabel: "ईमेल",
-      locationLabel: "स्थान",
-      socialsLabel: "सोशल",
-      nameInputLabel: "आपका नाम",
-      nameInputPlaceholder: "उदा. अब्दुल्लाह",
-      emailInputLabel: "ईमेल पता",
-      emailInputPlaceholder: "yourname@example.com",
-      messageInputLabel: "संदेश",
-      messageInputPlaceholder: "अपना संदेश यहाँ लिखें...",
+      sendTitlePrefix: "मुझे संदेश",
+      sendTitleHighlight: "भेजें",
+      namePlaceholder: "आपका नाम *",
+      emailPlaceholder: "ई-मेल पता *",
+      subjectPlaceholder: "विषय *",
+      messagePlaceholder: "अपना संदेश लिखें *",
       sendBtn: "संदेश भेजें",
-      sentTitle: "संदेश भेजा गया!",
-      sentDesc: "संपर्क करने के लिए धन्यवाद। मैं जल्द ही उत्तर दूँगा।"
+      sendingBtn: "भेजा जा रहा है...",
+      sentSuccess: "धन्यवाद! आपका संदेश सफलतापूर्वक अब्दुल्लाह के ईमेल पर भेज दिया गया है।",
+      preferTitlePrefix: "या आप सीधे",
+      preferTitleHighlight: "जुड़ सकते हैं...",
+      supportTitlePrefix: "मेरे काम का",
+      supportTitleHighlight: "समर्थन करें",
+      supportP1: "यदि आपको मेरा काम पसंद आता है, तो कृपया मुझे एक कप कॉफ़ी देकर सपोर्ट करें!",
+      supportP2: "आपका समर्थन मुझे समुदाय के लिए उपयोगी प्रोजेक्ट बनाने में मदद करता है।",
+      supportBtn: "Buy Me a Coffee"
     },
     educationSection: {
+      subtitle: "यह मेरी",
       titlePrefix: "शैक्षणिक",
-      titleHighlight: "शिक्षा",
-      items: [
+      titleHighlight: "पृष्ठभूमि",
+      tabAll: "सभी",
+      tabAcademic: "एकेडेमिक",
+      tabOnline: "ऑनलाइन कोर्सेस",
+      academicItems: [
         {
-          degree: "कंप्यूटर साइंस एंड इंजीनियरिंग में बी.एससी.",
-          institution: "ढाका विश्वविद्यालय संबद्ध संस्थान",
-          location: "ढाका, बांग्लादेश",
-          period: "2020 - 2024",
-          grade: "प्रथम श्रेणी (डिस्टिंक्शन)",
-          description: "डेटा एनालिटिक्स, सांख्यिकी, रिलेशनल डेटाबेस, एल्गोरिदम और आधुनिक वेब सिस्टम।"
+          id: "diploma",
+          category: "academic",
+          degree: "Diploma in Computer Science & Technology",
+          institution: "दीनाजपुर पॉलिटेक्निक इंस्टीट्यूट",
+          period: "2022 – 2026 (प्रत्याशित)",
+          location: "दीनाजपुर, बांग्लादेश",
+          semester: "8वां सेमेस्टर",
+          grade: "CGPA: 3.73 / 4.00",
+          status: "वर्तमान में अध्ययनरत",
+          badgeType: "polytechnic",
+          description:
+            "प्रोग्रामिंग, डेटाबेस, वेब डेवलपमेंट, नेटवर्किंग और सॉफ्टवेयर इंजीनियरिंग के मूल सिद्धांतों को कवर करने वाले डिप्लोमा का अध्ययन। कोडिंग क्लब और हैकाथॉन में सक्रिय रूप से शामिल।",
+          highlights: [
+            "पूर्ण किए गए सेमेस्टरों में 4.00 में से 3.73 का उत्कृष्ट CGPA प्राप्त किया।",
+            "C, C++, Python, JavaScript और रिलेशनल डेटाबेस सिस्टम (SQL) में कुशल।",
+            "MERN स्टैक के साथ आधुनिक फुल-स्टैक वेब डेवलपमेंट में विशेषज्ञता।",
+            "बेहतरीन संचार और समस्या समाधान कौशल के साथ सहयोगात्मक टीम प्लेयर।",
+          ],
+          tags: [
+            "Web Development",
+            "Data Structures",
+            "Database Management",
+            "Networking",
+            "Software Engineering",
+            "C / C++",
+            "JavaScript",
+            "Python",
+          ],
         },
         {
-          degree: "उच्चतर माध्यमिक प्रमाण पत्र (एचएससी) - विज्ञान",
-          institution: "ढाका बोर्ड",
-          location: "ढाका, बांग्लादेश",
-          period: "2018 - 2020",
-          grade: "जीपीए 5.00",
-          description: "उच्च गणित, भौतिक विज्ञान, रसायन विज्ञान और आईसीटी।"
-        }
-      ]
+          id: "ssc",
+          category: "academic",
+          degree: "Secondary School Certificate (SSC)",
+          institution: "पीरगंज म्यूनिसिपल हाई स्कूल",
+          period: "2021",
+          location: "पीरगंज, रंगपुर",
+          grade: "GPA: 5.00 / 5.00",
+          status: "परफेक्ट स्कोर उपलब्धि 🏆",
+          badgeType: "school",
+          description:
+            "उत्कृष्ट शैक्षणिक प्रदर्शन के साथ माध्यमिक शिक्षा पूरी की। गणित और भौतिक विज्ञान में विशेषज्ञता के साथ विज्ञान वर्ग में उत्तम GPA हासिल किया।",
+          highlights: [
+            "विज्ञान समूह में पूर्ण GPA 5.00 (गोल्डन A+) प्राप्त किया।",
+            "उच्च गणित और भौतिक विज्ञान में मजबूत शैक्षणिक उत्कृष्टता का प्रदर्शन किया।",
+            "गहन विश्लेषणात्मक सोच, अनुशासन और वैज्ञानिक समस्या समाधान क्षमताओं का विकास किया।",
+          ],
+          tags: [
+            "Mathematics",
+            "Physics",
+            "Chemistry",
+            "Higher Math",
+            "General Science",
+            "ICT",
+          ],
+        },
+        {
+          id: "jsc",
+          category: "academic",
+          degree: "Junior School Certificate (JSC)",
+          institution: "पीरगंज म्यूनिसिपल हाई स्कूल",
+          period: "2018",
+          location: "पीरगंज, रंगपुर",
+          grade: "GPA: 4.86 / 5.00",
+          status: "उच्च विशिष्टता",
+          badgeType: "school",
+          description:
+            "उत्कृष्ट परिणामों के साथ शिक्षा की मजबूत नींव। विभिन्न शैक्षणिक प्रतियोगिताओं और पाठ्येतर गतिविधियों में भागीदारी।",
+          highlights: [
+            "लगातार शैक्षणिक समर्पण का प्रदर्शन करते हुए उत्कृष्ट परिणामों (GPA 4.86) के साथ उत्तीर्ण हुए।",
+            "स्कूल की शैक्षणिक प्रतियोगिताओं, वाद-विवाद और पाठ्येतर परियोजनाओं में सक्रिय रूप से भाग लिया।",
+            "विज्ञान, गणित और अंग्रेजी संचार में एक ठोस आधार स्थापित किया।",
+          ],
+          tags: [
+            "General Science",
+            "Mathematics",
+            "English",
+            "Bengali",
+            "Analytical Thinking",
+          ],
+        },
+      ],
+      onlineItems: [
+        {
+          id: "phero-web-dev",
+          category: "online",
+          degree: "Complete Web Development",
+          institution: "Programming Hero",
+          period: "2024",
+          location: "ऑनलाइन",
+          status: "उत्कृष्टता के साथ पूर्णता प्रमाणपत्र 🏆",
+          badgeType: "phero",
+          hasCertificate: true,
+          certFile: "/certificate-web-development.jpg",
+          certPdf: "/Sertificate-Of-Web-Development.pdf",
+          description:
+            "एक गहन फुल-स्टैक वेब डेवलपमेंट प्रोग्राम पूरा किया जिसमें आधुनिक जावास्क्रिप्ट, रिस्पॉन्सिव डिज़ाइन, React.js फ्रंटएंड आर्किटेक्चर, बैकएंड REST APIs और डेटाबेस इंजीनियरिंग शामिल थी।",
+          highlights: [
+            "HTML5, आधुनिक CSS3, रिस्पॉन्सिव लेआउट और Tailwind CSS फ्रेमवर्क में महारत हासिल की।",
+            "React.js, React Router और कॉन्टेक्स्ट स्टेट के साथ रिस्पॉन्सिव सिंगल पेज एप्लिकेशन (SPAs) बनाए।",
+            "Node.js, Express.js और MongoDB डेटाबेस के साथ स्केलेबल बैकएंड वेब सेवाएं विकसित कीं।",
+            "उत्कृष्टता के साथ पूर्णता प्रमाणपत्र प्रदान किया गया (बैच 10, छात्र आईडी: WEB10-2954)।",
+          ],
+          tags: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "REST APIs",
+            "Full Stack",
+          ],
+        },
+        {
+          id: "python-beginners",
+          category: "online",
+          degree: "Python for Beginners",
+          institution: "MySirG.com",
+          period: "जनवरी 2025 – फरवरी 2025",
+          location: "ऑनलाइन",
+          status: "सत्यापित क्रेडेंशियल",
+          badgeType: "avatar2",
+          hasCertificate: false,
+          description:
+            "MySirG.com से पायथन प्रोग्रामिंग पर एक ऑनलाइन कोर्स पूरा किया, जिसमें कोडिंग अवधारणाओं और पायथन का उपयोग करके व्यावहारिक समस्या समाधान की मजबूत नींव तैयार की गई।",
+          highlights: [
+            "पायथन सिंटैक्स, वेरिएबल्स, डेटा स्ट्रक्चर्स और कोर डेटा प्रकारों में महारत हासिल की।",
+            "लूप, कंडीशनल और एक्सेप्शन हैंडलिंग जैसी नियंत्रण संरचनाओं को लागू किया।",
+            "मॉड्यूलर फ़ंक्शंस, फ़ाइल हैंडलिंग और ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग अवधारणाओं के साथ काम किया।",
+            "तार्किक सोच को मजबूत करने के लिए व्यावहारिक कोडिंग अभ्यास और एल्गोरिथम चुनौतियों का अभ्यास किया।",
+          ],
+          tags: [
+            "Python",
+            "Control Structures",
+            "Data Types",
+            "OOP",
+            "Problem Solving",
+            "File Handling",
+          ],
+        },
+        {
+          id: "data-analysis-python",
+          category: "online",
+          degree: "Data Analysis with Python",
+          institution: "IBM",
+          period: "जनवरी 2026",
+          location: "ऑनलाइन",
+          status: "सत्यापित क्रेडेंशियल",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "IBM से Data Analysis with Python प्रमाणन पूरा किया, जिसमें डेटा क्लीनिंग, सांख्यिकीय मॉडलिंग और विश्लेषणात्मक पाइपलाइन निर्माण का प्रदर्शन किया।",
+          highlights: [
+            "Pandas और NumPy का उपयोग करके वास्तविक ट्यूबलर डेटा को साफ, व्यवस्थित और प्रीप्रोसेस किया।",
+            "खोजपूर्ण डेटा विश्लेषण वर्कफ़्लो बनाए और विवरणात्मक आंकड़ों की गणना की।",
+            "सूचित निर्णय लेने के लिए प्रेडिक्टिव मॉडल और डेटा रूपांतरण विकसित किए।",
+          ],
+          tags: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Data Cleaning",
+            "Statistical Modeling",
+            "Data Analysis",
+          ],
+        },
+        {
+          id: "data-vis-python",
+          category: "online",
+          degree: "Data Visualization with Python",
+          institution: "IBM",
+          period: "दिसंबर 2025",
+          location: "ऑनलाइन",
+          status: "सत्यापित क्रेडेंशियल",
+          badgeType: "ibm",
+          hasCertificate: false,
+          description:
+            "IBM से Data Visualization with Python पूरा किया, जिसमें इंटरैक्टिव चार्ट, सूचनात्मक डैशबोर्ड और विज़ुअल डेटा स्टोरीटेलिंग में विशेषज्ञता हासिल की।",
+          highlights: [
+            "Matplotlib और Seaborn का उपयोग करके जटिल बहुआयामी डेटासेट की कल्पना की।",
+            "प्रकाशन-तैयार प्लॉट, बार चार्ट, हीटमैप और ट्रेंड अनुमान तैयार किए।",
+            "हितधारकों तक अंतर्दृष्टि को प्रभावी ढंग से पहुंचाने के लिए दृश्य कहानी कहने की तकनीकों में महारत हासिल की।",
+          ],
+          tags: [
+            "Matplotlib",
+            "Seaborn",
+            "Data Visualization",
+            "Dashboards",
+            "Visual Storytelling",
+          ],
+        },
+        {
+          id: "power-bi",
+          category: "online",
+          degree: "Power BI Specialist",
+          institution: "SkillCourse",
+          period: "नवंबर 2024",
+          location: "ऑनलाइन",
+          status: "सत्यापित क्रेडेंशियल",
+          badgeType: "avatar1",
+          hasCertificate: false,
+          description:
+            "रिलेशनल डेटा मॉडलिंग, कस्टम DAX माप निर्माण और इंटरैक्टिव बिजनेस डैशबोर्ड बनाने में विशेषज्ञता प्रदर्शित करते हुए Power BI प्रमाणन प्राप्त किया।",
+          highlights: [
+            "स्टार-स्कीमा डेटा मॉडल तैयार किए और Power Query के माध्यम से ETL पाइपलाइनों को अनुकूलित किया।",
+            "KPI, विकास तुलना और गतिशील फिल्टर के लिए जटिल DAX गणनाएं लिखीं।",
+            "ड्रिल-डाउन और क्रॉस-फ़िल्टरिंग सुविधाओं के साथ रिस्पॉन्सिव कार्यकारी डैशबोर्ड प्रकाशित किए।",
+          ],
+          tags: [
+            "Power BI",
+            "DAX Formulas",
+            "Data Modeling",
+            "Business Intelligence",
+            "Interactive Dashboards",
+          ],
+        },
+        {
+          id: "sql-data-science",
+          category: "online",
+          degree: "SQL for Data Science",
+          institution: "University of California (UC Davis)",
+          period: "अक्टूबर 2024",
+          location: "ऑनलाइन",
+          status: "सत्यापित क्रेडेंशियल",
+          badgeType: "school",
+          hasCertificate: false,
+          description:
+            "जटिल जॉइन, एग्रीगेशन और क्वेरी प्रदर्शन अनुकूलन पर ध्यान केंद्रित करते हुए उन्नत SQL रिलेशनल डेटाबेस क्वेरी और इंडेक्सिंग प्रमाणन पूरा किया।",
+          highlights: [
+            "मल्टी-टेबल जॉइन, विंडो फ़ंक्शंस और सबक्वेरी की विशेषता वाली उन्नत SQL क्वेरी लिखीं।",
+            "रिलेशनल स्कीमा डिज़ाइन किए और रिलेशनल बाधाएं तथा इंडेक्सिंग रणनीतियां स्थापित कीं।",
+            "एनालिटिक्स और बैकएंड एकीकरण के लिए बड़े डेटासेट निकाले और फ़िल्टर किए।",
+          ],
+          tags: [
+            "SQL",
+            "PostgreSQL",
+            "Relational Databases",
+            "Indexing",
+            "Query Optimization",
+            "Data Modeling",
+          ],
+        },
+      ],
     },
     techStackSection: {
-      titlePrefix: "तकनीकी",
+      subtitle: "एक्सप्लोर करें",
+      titlePrefix: "मेरा",
       titleHighlight: "टेक स्टैक",
-      categories: [
+      tabAll: "सभी",
+      tabFrontend: "फ्रंटएंड",
+      tabBackend: "बैकएंड",
+      tabDatabase: "डेटाबेस",
+      tabShopify: "शॉपिफ़ाई",
+      tabTools: "टूल्स",
+      skills: [
         {
-          title: "डेटा विश्लेषण और विज़ुअलाइज़ेशन",
-          skills: ["Power BI", "Microsoft Excel (Advanced)", "Tableau", "Matplotlib", "Seaborn", "DAX Formulas"]
+          id: "react",
+          name: "React.js",
+          category: "frontend",
+          percentage: 90,
+          iconId: "react",
         },
         {
-          title: "भाषाएं और फ्रेमवर्क",
-          skills: ["Python", "SQL (PostgreSQL / MySQL)", "JavaScript / React", "Pandas", "NumPy", "Scikit-Learn"]
+          id: "javascript",
+          name: "JavaScript",
+          category: "frontend",
+          percentage: 92,
+          iconId: "javascript",
         },
         {
-          title: "डेटाबेस और ईटीएल",
-          skills: ["PostgreSQL", "MySQL", "Data Cleaning", "Data Modeling", "ETL Pipelines", "Query Optimization"]
+          id: "typescript",
+          name: "TypeScript",
+          category: "frontend",
+          percentage: 80,
+          iconId: "typescript",
         },
         {
-          title: "टूल्स और वातावरण",
-          skills: ["Jupyter Notebook", "VS Code", "Git & GitHub", "Google Colab", "Tailwind CSS", "Linux Shell"]
-        }
-      ]
+          id: "nextjs",
+          name: "Next.js",
+          category: "frontend",
+          percentage: 82,
+          iconId: "nextjs",
+        },
+        {
+          id: "nodejs",
+          name: "Node.js",
+          category: "backend",
+          percentage: 85,
+          iconId: "nodejs",
+        },
+        {
+          id: "express",
+          name: "Express.js",
+          category: "backend",
+          percentage: 88,
+          iconId: "express",
+        },
+        {
+          id: "mongodb",
+          name: "MongoDB",
+          category: "database",
+          percentage: 85,
+          iconId: "mongodb",
+        },
+        {
+          id: "tailwind",
+          name: "Tailwind CSS",
+          category: "frontend",
+          percentage: 95,
+          iconId: "tailwind",
+        },
+        {
+          id: "firebase",
+          name: "Firebase",
+          category: "backend",
+          percentage: 80,
+          iconId: "firebase",
+        },
+        {
+          id: "git",
+          name: "Git",
+          category: "tools",
+          percentage: 88,
+          iconId: "git",
+        },
+        {
+          id: "html5",
+          name: "HTML5",
+          category: "frontend",
+          percentage: 95,
+          iconId: "html5",
+        },
+        {
+          id: "css3",
+          name: "CSS3",
+          category: "frontend",
+          percentage: 92,
+          iconId: "css3",
+        },
+        {
+          id: "shopify",
+          name: "Shopify",
+          category: "shopify",
+          percentage: 90,
+          iconId: "shopify",
+        },
+        {
+          id: "liquid",
+          name: "Shopify Liquid",
+          category: "shopify",
+          percentage: 88,
+          iconId: "liquid",
+        },
+        {
+          id: "github",
+          name: "GitHub",
+          category: "tools",
+          percentage: 90,
+          iconId: "github",
+        },
+        {
+          id: "redux",
+          name: "Redux",
+          category: "frontend",
+          percentage: 82,
+          iconId: "redux",
+        },
+      ],
     },
     experienceSection: {
       titlePrefix: "कार्य",
       titleHighlight: "अनुभव",
       items: [
         {
-          role: "डेटा एनालिस्ट और सॉफ्टवेयर फेलो",
-          company: "डेटा टेक इनोवेशंस",
-          period: "2023 - वर्तमान",
-          type: "व्यावसायिक",
+          role: "Frontend & Jr. Shopify Developer",
+          company: "Scaleup Ads Agency (Betopia Group)",
+          location: "रिमोट, बांग्लादेश",
+          period: "दिसंबर 2025 – वर्तमान",
+          type: "पूर्णकालिक",
+          logo: "/betopia.png",
           highlights: [
-            "व्यावसायिक अवसरों की पहचान के लिए पावर बीआई डैशबोर्ड तैयार करना।",
-            "क्वेरी निष्कर्षण समय को 35% तक कम करने के लिए अनुकूलित एसक्यूएल क्वेरी तैयार कीं।",
-            "स्वचालित केपीआई रिपोर्टिंग प्रदान करने के लिए टीमों के साथ सहयोग किया।"
-          ]
+            "Shopify Liquid, HTML, CSS और JavaScript का उपयोग करके Shopify स्टोर विकसित और कस्टमाइज़ किए।",
+            "रिस्पॉन्सिव और उपयोगकर्ता के अनुकूल अनुभव प्रदान करने के लिए Shopify थीम्स और स्टोरफ्रंट को फिर से डिज़ाइन किया।",
+            "उत्पाद पृष्ठों, संग्रह पृष्ठों, नेविगेशन, कार्ट कार्यक्षमता और थीम अनुभागों को कस्टमाइज़ किया।",
+            "फ्रंटएंड समस्याओं का समाधान किया और क्लाइंट की आवश्यकताओं के आधार पर Shopify सुविधाओं और ऐप एकीकरण को लागू किया।",
+          ],
         },
         {
-          role: "डेटा साइंस प्रोजेक्ट एसोसिएट",
-          company: "एनालिटिक्स लैब",
-          period: "2022 - 2023",
-          type: "प्रोजेक्ट फेलो",
+          role: "Sales Executive",
+          company: "MN Trade International",
+          location: "दीनाजपुर, बांग्लादेश",
+          period: "जनवरी 2022 – अगस्त 2025",
+          type: "पूर्णकालिक",
           highlights: [
-            "ग्राहक विभाजन के लिए पायथन में प्रेडिक्टिव मशीन लर्निंग मॉडल बनाए।",
-            "कच्चे डेटा पर व्यापक ईडीए और डेटा क्लीनिंग पाइपलाइन निष्पादित कीं।"
-          ]
-        }
-      ]
+            "कंपनी के ग्राहक आधार का विस्तार करने के लिए ग्राहक संबंधों और व्यवसाय विकास गतिविधियों का प्रबंधन किया।",
+            "मूल्य निर्धारण, वितरण कार्यक्रम और व्यापार शर्तों पर बातचीत करने के लिए आपूर्तिकर्ताओं और खरीदारों के साथ समन्वय किया।",
+            "आयात/निर्यात व्यापार संचालन के लिए बिक्री रिकॉर्ड, रिपोर्ट और दस्तावेज़ीकरण तैयार और बनाए रखा।",
+            "बिक्री के नए अवसरों और विकास क्षेत्रों की पहचान करने के लिए बाजार के रुझानों और प्रतिस्पर्धियों की गतिविधियों की निगरानी की।",
+            "प्रत्यक्ष ग्राहक जुड़ाव और सौदों को अंतिम रूप देने के माध्यम से मजबूत संचार और बातचीत कौशल विकसित किए।",
+          ],
+        },
+      ],
     },
     portfolioSection: {
-      titlePrefix: "विशेष",
-      titleHighlight: "पोर्टफोलियो प्रोजेक्ट्स",
+      subtitle: "एक नज़र डालें",
+      titlePrefix: "मेरे",
+      titleHighlight: "प्रोजेक्ट्स",
+      tabAll: "सभी",
+      tabFrontend: "फ्रंटएंड",
+      tabFullStack: "फुल स्टैक",
       items: [
         {
-          title: "ग्लोबल सेल्स एंड प्रॉफिट इंटेलिजेंस डैशबोर्ड",
-          tag: "Power BI & SQL",
-          description: "5 लाख से अधिक लेनदेन के साथ बहु-पृष्ठ बीआई रिपोर्टिंग प्रणाली, पूर्वानुमान और केपीआई मेट्रिक्स।",
-          tags: ["Power BI", "SQL", "DAX", "Data Modeling"]
+          id: "moviesphere",
+          title: "MovieSphere",
+          category: "frontend",
+          categoryName: "फ्रंटएंड",
+          iconType: "film",
+          description:
+            "एक आधुनिक मूवी एक्सप्लोरर वेब ऐप जहां उपयोगकर्ता किसी भी फिल्म का नाम खोज सकते हैं और TVMaze API के माध्यम से रेटिंग, सारांश और कास्ट विवरण रीयल-टाइम में देख सकते हैं।",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "TVMaze API",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://movie-spheree.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/movie-explorer",
         },
         {
-          title: "ई-कॉमर्स कस्टमर चर्न प्रेडिक्शन इंजन",
-          tag: "Python & Machine Learning",
-          description: "रैंडम फॉरेस्ट और एक्सजीबूस्ट का उपयोग करके 89% सटीकता के साथ चर्न जोखिम का पूर्वानुमान लगाने वाला एमएल मॉडल।",
-          tags: ["Python", "Pandas", "Scikit-Learn", "Matplotlib"]
+          id: "skywatch",
+          title: "SkyWatch Weather",
+          category: "frontend",
+          categoryName: "फ्रंटएंड",
+          iconType: "cloud",
+          description:
+            "बिना किसी लॉगिन के एक स्मार्ट मौसम पूर्वानुमान ऐप। उपयोगकर्ता तुरंत वर्तमान स्थान या किसी भी शहर का मौसम देख सकते हैं और मौसम के अनुसार छाता या पानी की बोतल रखने जैसी स्मार्ट सलाह प्राप्त कर सकते हैं।",
+          tags: [
+            "React.js",
+            "Tailwind CSS",
+            "Open-Meteo API",
+            "Geolocation",
+            "Lucide Icons",
+          ],
+          liveUrl: "https://sky-watch-webapp.netlify.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111/SkyWatch-weather-app",
         },
         {
-          title: "रियल-टाइम वित्तीय भावना और बाजार के रुझान",
-          tag: "Data Scraping & NLP",
-          description: "निवेशक भावना का विश्लेषण करने के लिए स्वचालित ईटीएल स्क्रिप्ट।",
-          tags: ["Python", "BeautifulSoup", "NLTK", "Plotly"]
-        }
-      ]
+          id: "badal-portfolio",
+          title: "Digital Marketer Portfolio",
+          category: "frontend",
+          categoryName: "फ्रंटएंड",
+          iconType: "briefcase",
+          description:
+            "एक डिजिटल मार्केटर के लिए तैयार की गई आधुनिक और उच्च-रूपांतरण पोर्टफोलियो वेबसाइट। इसमें मार्केटिंग रणनीतियों, केस स्टडीज, अभियान के परिणामों और लीड जनरेशन के लिए संपर्क फॉर्म शामिल हैं।",
+          tags: [
+            "React.js",
+            "React Router",
+            "Tailwind CSS",
+            "Netlify",
+            "Responsive UI",
+          ],
+          liveUrl: "https://badal-islam.netlify.app/",
+          githubUrl: "https://github.com/abdullahalmamun111/Portfolio",
+        },
+        {
+          id: "blood-donation",
+          title: "Blood Donation Application",
+          category: "fullstack",
+          categoryName: "फुल स्टैक",
+          iconType: "heart",
+          description:
+            "रक्तदाताओं और जरूरतमंदों को जोड़ने वाला एक व्यापक फुल-स्टैक प्लेटफॉर्म। इसमें डोनर पंजीकरण, तत्काल रक्त अनुरोध पोस्टिंग, रीयल-टाइम स्थिति और स्थान-आधारित खोज शामिल हैं।",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+          liveUrl: "https://blood-donation-c92df.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=bloo&type=&language=&sort=",
+        },
+        {
+          id: "marathon-system",
+          title: "Marathon Management System",
+          category: "fullstack",
+          categoryName: "फुल स्टैक",
+          iconType: "trophy",
+          description:
+            "मैराथन आयोजनों के लिए एक संपूर्ण इवेंट मैनेजमेंट पोर्टल। इसमें ऑनलाइन पंजीकरण, इवेंट शेड्यूलिंग, रीयल-टाइम लीडरबोर्ड ट्रैकिंग और डिजिटल प्रमाणपत्र निर्माण की सुविधा है।",
+          tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Full Stack"],
+          liveUrl: "https://marathon-client-side.web.app/",
+          githubUrl:
+            "https://github.com/abdullahalmamun111?tab=repositories&q=A-11-ma&type=&language=&sort=",
+        },
+        {
+          id: "bpl-playdraft",
+          title: "BPL PlayDraft",
+          category: "frontend",
+          categoryName: "फ्रंटएंड",
+          iconType: "gamepad",
+          description:
+            "बांग्लादेश प्रीमियर लीग (BPL) के लिए एक इंटरैक्टिव फंतासी क्रिकेट ड्राफ्ट प्लेटफॉर्म। इसमें बजट के अनुसार टीम बनाना, खिलाड़ियों का ड्राफ्ट, लाइव स्कोर और लीडरबोर्ड रैंकिंग शामिल हैं।",
+          tags: [
+            "React.js",
+            "JavaScript",
+            "Tailwind CSS",
+            "DaisyUI",
+            "State Management",
+          ],
+          liveUrl: "https://dream-bpl-bpl-draft-website-a-07.surge.sh/",
+          githubUrl: "https://github.com/abdullahalmamun111/BPL-PlayDraft-2024",
+        },
+      ],
     },
     servicesSection: {
-      titlePrefix: "विशिष्ट",
+      subtitle: "आप मुझे इन सेवाओं के लिए चुन सकते हैं",
+      titlePrefix: "वेब और शॉपिफ़ाई",
       titleHighlight: "सेवाएं",
-      items: [
+      introP1:
+        "मैं एक जूनियर शॉपिफ़ाई डेवलपर और फुल-स्टैक डेवलपर हूँ, जिसे शॉपिफ़ाई स्टोर डेवलपमेंट, थीम कस्टमाइज़ेशन, स्टोर री-डिजाइन और MERN स्टैक वेब इंजीनियरिंग में 8.5+ महीने का व्यावहारिक अनुभव है।",
+      introP2: "यदि आप मेरे साथ काम करने में रुचि रखते हैं,",
+      whatsappCta: "तो अभी क्लिक करके सीधे WhatsApp पर संपर्क कर सकते हैं।",
+      testimonialsTitlePrefix: "क्लाइंट",
+      testimonialsTitleHighlight: "प्रशंसापत्र",
+      testimonials: [
         {
-          title: "इंटरैक्टिव बीआई डैशबोर्ड विकास",
-          description: "डायनामिक डीएएक्स मेट्रिक्स और स्वचालित ड्रिल-डाउन के साथ पावर बीआई डैशबोर्ड डिजाइनिंग।"
+          id: 1,
+          quote:
+            "अब्दुल्लाह ने हमारे शॉपिफ़ाई स्टोर को बहुत ही शानदार तरीके से कस्टमाइज़ किया। स्टोर की स्पीड और मोबाइल कन्वर्ज़न काफी बढ़ गया है।",
+          name: "डेविड मिलर",
+          role: "ई-कॉमर्स संस्थापक",
+          avatar:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "डेटा क्लीनिंग और प्रीप्रोसेसिंग",
-          description: "अव्यवस्थित व्यावसायिक डेटा को संरचित डेटा में बदलना।"
+          id: 2,
+          quote:
+            "उत्कृष्ट फुल-स्टैक कार्य! React और Node.js के साथ समय पर वेब एप्लिकेशन तैयार किया। कोड की गुणवत्ता बहुत अच्छी है।",
+          name: "सारा जेनकिंस",
+          role: "उत्पाद प्रबंधक",
+          avatar:
+            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
         },
         {
-          title: "उन्नत एक्सेल स्वचालन",
-          description: "जटिल वित्तीय मॉडलिंग, स्वचालित पिवट टेबल और पावर क्वेरी मैक्रोज़ तैयार करना।"
+          id: 3,
+          quote:
+            "शानदार समस्या-समाधान कौशल! उन्होंने हमारे शॉपिफ़ाई लिक्विड कोड की समस्याओं को बहुत जल्दी ठीक किया।",
+          name: "एलेक्स रहमान",
+          role: "मार्केटिंग निदेशक",
+          avatar:
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+        },
+      ],
+      whatIDoTitlePrefix: "मैं क्या",
+      whatIDoTitleHighlight: "करता हूँ",
+      workflow: [
+        {
+          id: 1,
+          titlePrefix: "Shopify स्टोर",
+          titleSuffix: "सेटअप और री-डिजाइन",
+          percentage: 95,
+          desc: "पूर्ण स्टोर सेटअप, थीम री-डिजाइन और बेहतर रूपांतरण के लिए अनुकूलित लेआउट।",
+          iconType: "store",
         },
         {
-          title: "प्रेडिक्टिव एनालिटिक्स और मशीन लर्निंग",
-          description: "पायथन और सांख्यिकीय एल्गोरिदम के साथ भविष्य के रुझानों का पूर्वानुमान लगाना।"
-        }
-      ]
+          id: 2,
+          titlePrefix: "Liquid और थीम",
+          titleSuffix: "कस्टमाइज़ेशन",
+          percentage: 90,
+          desc: "शॉपिफ़ाई लिक्विड कोड, उत्पाद पृष्ठ और कार्ट सुविधाओं को कस्टमाइज़ करना।",
+          iconType: "liquid",
+        },
+        {
+          id: 3,
+          titlePrefix: "फुल-स्टैक वेब",
+          titleSuffix: "डेवलपमेंट",
+          percentage: 85,
+          desc: "React.js, Node.js और MongoDB के साथ आधुनिक वेब एप्लिकेशन निर्माण।",
+          iconType: "mern",
+        },
+        {
+          id: 4,
+          titlePrefix: "रिस्पॉन्सिव",
+          titleSuffix: "UI/UX डिज़ाइन",
+          percentage: 95,
+          desc: "Figma डिज़ाइन को पिक्सेल-परफेक्ट, मोबाइल-अनुकूल वेब इंटरफेस में बदलना।",
+          iconType: "ui",
+        },
+        {
+          id: 5,
+          titlePrefix: "Shopify ऐप्स और",
+          titleSuffix: "API एकीकरण",
+          percentage: 85,
+          desc: "शॉपिफ़ाई ऐप्स, पेमेंट गेटवे और कस्टम फीचर्स का एकीकरण।",
+          iconType: "apps",
+        },
+        {
+          id: 6,
+          titlePrefix: "बग फिक्सिंग और",
+          titleSuffix: "अनुकूलन",
+          percentage: 90,
+          desc: "फ्रंटएंड समस्याओं का समाधान और स्टोर लोडिंग स्पीड में सुधार।",
+          iconType: "troubleshoot",
+        },
+      ],
     },
-    updatesSection: {
+updatesSection: {
+      subtitle: "एक नज़र डालें मेरे",
       titlePrefix: "हालिया",
-      titleHighlight: "अपडेट्स और फ़ीड",
+      titleHighlight: "अपडेट्स",
+      stats: [
+        { id: 1, value: "850+", label: "कप कॉफ़ी पी", iconType: "coffee" },
+        { id: 2, value: "85,000+", label: "लाइन से अधिक कोड", iconType: "code" },
+        { id: 3, value: "असीम", label: "सीखने का जुनून", iconType: "heart" },
+        { id: 4, value: "14+", label: "प्रोजेक्ट्स और स्टोर्स", iconType: "store" }
+      ],
+      timelineTitlePrefix: "लाइफ",
+      timelineTitleHighlight: "अपडेट्स",
+      moreText: "और अधिक",
+      moreHighlight: "जानें",
       items: [
         {
-          date: "सितंबर 2026",
-          title: "उन्नत डेटा इंजीनियरिंग विशेषज्ञता पूरी की",
-          tag: "माइलस्टोन",
-          body: "PostgreSQL अनुकूलन और ईटीएल पाइपलाइन वास्तुकला में दक्षता हासिल की।"
+          id: 1,
+          titlePrefix: "कार्यरत हूँ",
+          titleHighlight: "Shopify स्टोरफ्रंट और क्लाइंट प्रोजेक्ट्स पर",
+          org: "Scaleup Ads Agency (Betopia Group)",
+          location: "रिमोट, बांग्लादेश",
+          date: "दिसंबर 2025 – वर्तमान",
+          desc: "Shopify Liquid, थीम कस्टमाइज़ेशन, रिस्पॉन्सिव डिज़ाइन और क्लाइंट्स के लिए ई-कॉमर्स स्टोर विकसित करने पर सक्रिय रूप से काम कर रहा हूँ।",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "अगस्त 2026",
-          title: "ओपन सोर्स पावर बीआई टेम्पलेट लाइब्रेरी प्रकाशित की",
-          tag: "समुदाय",
-          body: "कार्यकारी रिपोर्टिंग के लिए थीम पैलेट और डीएएक्स उपायों का पुन: प्रयोज्य संग्रह जारी किया।"
+          id: 2,
+          titlePrefix: "निर्माण कर रहा हूँ",
+          titleHighlight: "फुल-स्टैक MERN वेब एप्लिकेशन",
+          org: "व्यक्तिगत व फ्रीलांस प्रोजेक्ट्स",
+          location: "ढाका, बांग्लादेश",
+          date: "जुलाई 2025 – अक्टूबर 2025",
+          desc: "React.js, Tailwind CSS, Node.js और MongoDB के साथ आधुनिक फुल-स्टैक एप्लिकेशन बनाए।",
+          links: {
+            github: "https://github.com/abdullahalmamun111",
+            live: "https://github.com/abdullahalmamun111"
+          }
         },
         {
-          date: "जुलाई 2026",
-          title: "वैश्विक स्वास्थ्य रुझानों पर खोजपूर्ण डेटा विश्लेषण",
-          tag: "अनुसंधान",
-          body: "डब्ल्यूएचओ डेटासेट का विश्लेषण किया और निष्कर्ष प्रकाशित किए।"
+          id: 3,
+          titlePrefix: "सफलतापूर्वक पूर्ण",
+          titleHighlight: "कंप्यूटर साइंस एंड टेक्नोलॉजी में डिप्लोमा",
+          org: "दीनाजपुर पॉलिटेक्निक इंस्टीट्यूट",
+          location: "दीनाजपुर, बांग्लादेश",
+          date: "2022 – 2026",
+          desc: "उत्कृष्ट अंकों (CGPA: 3.73 / 4.00) के साथ इंजीनियरिंग डिप्लोमा सफलतापूर्वक पूरा किया।",
+          links: {
+            github: "https://github.com/abdullahalmamun111"
+          }
         }
       ]
     },
     themes: {
-      light: "लाइट थीम",
-      dark: "डार्क थीम",
-      midnight: "मिडनाइट थीम"
+      light: "Light Theme",
+      dark: "Dark Theme",
+      midnight: "Midnight Theme",
     },
     actions: {
       downloadResume: "रिज्यूमे डाउनलोड करें",
@@ -978,18 +2687,18 @@ export const translations = {
       toggleTheme: "थीम बदलें",
       toggleLanguage: "भाषा बदलें",
       toggleMagicCursor: "मैजिक कर्सर टॉगल करें",
-      cursorEnabled: "मैजिक कर्सर: चालू",
-      cursorDisabled: "मैजिक कर्सर: बंद",
+      cursorEnabled: "मैजिक कर्सर: सक्षम",
+      cursorDisabled: "मैजिक कर्सर: अक्षम",
       closeWindow: "विंडो बंद करें",
       collapseSidebar: "साइडबार छुपाएं",
-      expandSidebar: "साइडबार दिखाएं"
+      expandSidebar: "साइडबार दिखाएं",
     },
     preloader: {
       initializing: "प्रारंभ हो रहा है",
-      loadingAssets: "इंटरफ़ेस तैयार हो रहा है",
+      loadingAssets: "इंटरफ़ेस अनुकूलित हो रहा है",
       buildingModules: "मॉड्यूल लोड हो रहे हैं",
       finalizing: "अंतिम रूप दिया जा रहा है",
-      complete: "तैयार"
-    }
-  }
+      complete: "तैयार",
+    },
+  },
 };

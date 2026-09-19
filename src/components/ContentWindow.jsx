@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { X, MapPin, Mail, Sparkles } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Illustrations';
 import { useLanguage } from '../context/LanguageContext';
@@ -15,9 +15,15 @@ import Contact from '../sections/Contact';
 export default function ContentWindow({ activeSection, setActiveSection }) {
   const { t } = useLanguage();
   const scrollContainerRef = useRef(null);
+  const [animKey, setAnimKey] = useState(0);
+  const prevSectionRef = useRef(activeSection);
 
-  // Scroll to top of content window when section switches
+  // Scroll to top of content window when section switches + trigger slide-in
   useEffect(() => {
+    if (prevSectionRef.current !== activeSection) {
+      prevSectionRef.current = activeSection;
+      setAnimKey(k => k + 1);
+    }
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -143,7 +149,10 @@ export default function ContentWindow({ activeSection, setActiveSection }) {
         className="flex-1 px-4 sm:px-6 md:px-10 py-6 overflow-y-auto custom-scrollbar"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
-        <div className="max-w-5xl mx-auto animate-in fade-in duration-300">
+        <div
+          key={animKey}
+          className="max-w-5xl mx-auto section-slide-in"
+        >
           {renderSection()}
         </div>
       </div>
