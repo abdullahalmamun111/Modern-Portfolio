@@ -63,7 +63,7 @@ function PortfolioApp() {
       {/* 2. Magic Cursor Effect (Desktop only) */}
       <MagicCursor enabled={magicCursorEnabled} />
 
-      {/* 3. Ambient Background Light Blobs matching Image 1 */}
+      {/* 3. Ambient Background Light Blobs */}
       <div className="absolute top-[-10%] left-[-5%] w-[50vw] h-[50vw] rounded-full bg-[var(--color-page-blob)] blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-[-10%] right-[-5%] w-[45vw] h-[45vw] rounded-full bg-[var(--color-page-blob)] blur-3xl pointer-events-none -z-10" />
       <div className="absolute top-[30%] right-[20%] w-[30vw] h-[30vw] rounded-full bg-[var(--color-accent-light)] opacity-35 blur-2xl pointer-events-none -z-10" />
@@ -84,7 +84,7 @@ function PortfolioApp() {
           </div>
         </div>
 
-        <div className="flex items-center space-x-1.5">
+        <div className="flex items-center space-x-2">
           {/* Quick theme cycle button on mobile header */}
           <button
             onClick={cycleTheme}
@@ -94,13 +94,30 @@ function PortfolioApp() {
             {getThemeIcon()}
           </button>
 
-          {/* Menu Drawer Toggle */}
+          {/* Eye-Catching Modern Menu Toggle Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 rounded-xl bg-[var(--color-window-bg)] border border-[var(--color-card-border)] text-[var(--color-text-primary)] active:scale-95 transition-all"
+            className="relative p-2 rounded-xl bg-[var(--color-window-bg)] border border-[var(--color-accent)]/80 text-[var(--color-accent)] shadow-[0_0_12px_rgba(6,182,212,0.3)] hover:shadow-[0_0_18px_rgba(6,182,212,0.5)] active:scale-95 transition-all duration-300 group cursor-pointer"
             title="Open menu"
           >
-            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {/* Ambient Breathing Pulse Glow */}
+            {!isMobileMenuOpen && (
+              <span className="absolute -inset-0.5 rounded-xl bg-[var(--color-accent)]/25 blur-xs animate-pulse -z-10" />
+            )}
+
+            {/* Pulsing Radar Beacon Dot */}
+            {!isMobileMenuOpen && (
+              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-accent)] opacity-80" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[var(--color-accent)] shadow-xs" />
+              </span>
+            )}
+
+            {isMobileMenuOpen ? (
+              <X className="w-5 h-5 text-[var(--color-accent)] transition-transform duration-200 rotate-90 group-hover:rotate-0" />
+            ) : (
+              <Menu className="w-5 h-5 text-[var(--color-accent)] transition-transform duration-200 group-hover:scale-110" />
+            )}
           </button>
         </div>
       </header>
@@ -216,7 +233,7 @@ function PortfolioApp() {
 
         <button
           onClick={() => setIsMobileMenuOpen(true)}
-          className="flex flex-col items-center justify-center p-2 rounded-xl text-[var(--color-text-primary)] active:bg-[var(--color-nav-hover-bg)] transition-all"
+          className="flex flex-col items-center justify-center p-2 rounded-xl text-[var(--color-accent)] active:bg-[var(--color-nav-hover-bg)] transition-all"
           title="All Menu Items"
         >
           <Menu className="w-4 h-4" />
