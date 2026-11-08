@@ -4,14 +4,11 @@ import {
   Building2,
   MapPin,
   Sparkles,
-  Award,
-  ExternalLink,
-  Download,
-  X,
-  FileText
+  Award
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { EducationAvatar } from '../components/Illustrations';
+import CertificateModal from '../components/CertificateModal';
 
 export default function Education() {
   const { t } = useLanguage();
@@ -194,94 +191,7 @@ export default function Education() {
       {/* ======================================================== */}
       {/* 4. CERTIFICATE MODAL POPUP                               */}
       {/* ======================================================== */}
-      {selectedCert && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
-          onClick={() => setSelectedCert(null)}
-        >
-          <div
-            className="relative w-full max-w-3xl max-h-[92vh] flex flex-col rounded-2xl bg-[var(--color-window-bg)] border border-[var(--color-card-border)] shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Modal Header */}
-            <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-[var(--color-card-border)] bg-[var(--color-card-bg)]">
-              <div className="flex items-center gap-3 min-w-0 pr-2">
-                <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 flex items-center justify-center text-[var(--color-accent)] shrink-0">
-                  <Award className="w-5 h-5" />
-                </div>
-                <div className="min-w-0">
-                  <h3 className="text-sm sm:text-base md:text-lg font-chakra font-bold text-[var(--color-text-primary)] truncate">
-                    {selectedCert.degree}
-                  </h3>
-                  <p className="text-[11px] sm:text-xs text-[var(--color-text-secondary)] truncate">
-                    {selectedCert.institution} • {selectedCert.period}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2 shrink-0">
-                {selectedCert.certFile && (
-                  <a
-                    href={selectedCert.certFile}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--color-accent)] text-slate-950 text-xs font-semibold hover:opacity-90 transition-opacity"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    <span className="hidden sm:inline">Open Full Size</span>
-                  </a>
-                )}
-                <button
-                  onClick={() => setSelectedCert(null)}
-                  className="w-8 h-8 rounded-lg flex items-center justify-center text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-card-border)] transition-colors cursor-pointer"
-                  aria-label="Close modal"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-
-            {/* Modal Content */}
-            <div className="p-4 sm:p-6 overflow-y-auto custom-scrollbar flex-1 flex flex-col items-center">
-              {selectedCert.certFile && (
-                <div className="w-full flex flex-col items-center gap-3.5">
-                  <div className="w-full rounded-xl overflow-hidden border border-[var(--color-card-border)] bg-black/40 flex items-center justify-center p-1 sm:p-2 shadow-inner">
-                    <img
-                      src={selectedCert.certFile}
-                      alt={selectedCert.degree}
-                      className="max-h-[60vh] w-auto max-w-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-
-                  <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[var(--color-text-muted)] pt-1 px-1">
-                    <p className="text-center sm:text-left text-[var(--color-text-secondary)] leading-relaxed">
-                      {selectedCert.description}
-                    </p>
-                    <div className="flex items-center gap-2 shrink-0">
-                      <a
-                        href={selectedCert.certFile}
-                        download="Abdullah_Almamun_Certificate.jpg"
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--color-accent)] text-slate-950 font-semibold hover:opacity-90 transition-opacity"
-                      >
-                        <Download className="w-3.5 h-3.5" /> Download Image
-                      </a>
-                      {selectedCert.certPdf && (
-                        <a
-                          href={selectedCert.certPdf}
-                          download="Abdullah_Almamun_Certificate.pdf"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--color-card-bg)] border border-[var(--color-card-border)] text-[var(--color-text-primary)] font-medium hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all"
-                        >
-                          <FileText className="w-3.5 h-3.5" /> PDF
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      <CertificateModal cert={selectedCert} onClose={() => setSelectedCert(null)} />
     </div>
   );
 }

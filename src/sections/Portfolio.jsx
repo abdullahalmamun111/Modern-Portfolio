@@ -7,7 +7,8 @@ import {
   HeartHandshake, 
   Trophy, 
   Gamepad2, 
-  Layers 
+  Layers,
+  ShoppingBag
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -39,6 +40,8 @@ function getProjectIcon(iconType) {
       return <Trophy className="w-5 h-5 text-emerald-500" />;
     case 'gamepad':
       return <Gamepad2 className="w-5 h-5 text-purple-500" />;
+    case 'shopify':
+      return <ShoppingBag className="w-5 h-5 text-emerald-400" />;
     default:
       return <Layers className="w-5 h-5 text-[var(--color-accent)]" />;
   }
@@ -52,10 +55,12 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState('all');
 
   const totalCount = projects.length;
+  const shopifyCount = projects.filter((p) => p.category === 'shopify').length;
   const frontendCount = projects.filter((p) => p.category === 'frontend').length;
   const fullstackCount = projects.filter((p) => p.category === 'fullstack').length;
 
   const filteredProjects = projects.filter((p) => {
+    if (activeTab === 'shopify') return p.category === 'shopify';
     if (activeTab === 'frontend') return p.category === 'frontend';
     if (activeTab === 'fullstack') return p.category === 'fullstack';
     return true;
@@ -63,6 +68,7 @@ export default function Portfolio() {
 
   const tabs = [
     { id: 'all', label: portfolioData.tabAll || 'All', count: totalCount },
+    { id: 'shopify', label: portfolioData.tabShopify || 'Shopify', count: shopifyCount },
     { id: 'frontend', label: portfolioData.tabFrontend || 'Frontend', count: frontendCount },
     { id: 'fullstack', label: portfolioData.tabFullStack || 'Full Stack', count: fullstackCount }
   ];

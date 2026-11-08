@@ -177,14 +177,14 @@ export default function Sidebar({
             <div className="w-full max-w-[200px] xl:max-w-[220px] overflow-hidden mt-1.5 py-0.5 mask-marquee">
               <div className="animate-marquee gap-2">
                 {[
-                  'Full Stack Developer',
-                  'Jr. Shopify Developer',
-                  'MERN Stack Developer',
+                  'Frontend Developer',
+                  'Shopify Developer',
                   'React.js Specialist',
                   'Liquid Theme Expert',
-                  'Full Stack Developer',
-                  'Jr. Shopify Developer',
-                  'MERN Stack Developer'
+                  'Frontend Developer',
+                  'Shopify Developer',
+                  'React.js Specialist',
+                  'Liquid Theme Expert'
                 ].map((role, idx) => (
                   <span
                     key={idx}

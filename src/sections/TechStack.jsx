@@ -272,6 +272,72 @@ export function TechLogo({ id, className = "w-9 h-9" }) {
         </svg>
       );
 
+    case 'shopify-theme':
+      return (
+        <svg viewBox="0 0 100 100" className={className}>
+          <rect width="100" height="100" rx="18" fill="#14261e" />
+          {/* Theme store header bar */}
+          <rect x="18" y="22" width="64" height="12" rx="3" fill="#96bf48" />
+          <circle cx="25" cy="28" r="2" fill="#14261e" />
+          <circle cx="31" cy="28" r="2" fill="#14261e" />
+          {/* Theme custom sections layout */}
+          <rect x="18" y="40" width="38" height="38" rx="4" fill="#96bf48" opacity="0.9" />
+          <rect x="60" y="40" width="22" height="17" rx="3" fill="#008060" />
+          <rect x="60" y="61" width="22" height="17" rx="3" fill="#5e8e3e" />
+        </svg>
+      );
+
+    case 'shopify-cli':
+      return (
+        <svg viewBox="0 0 100 100" className={className}>
+          <rect width="100" height="100" rx="18" fill="#1e1e24" />
+          <circle cx="26" cy="24" r="3" fill="#ff5f56" />
+          <circle cx="35" cy="24" r="3" fill="#ffbd2e" />
+          <circle cx="44" cy="24" r="3" fill="#27c93f" />
+          {/* Prompt >_ in shopify green */}
+          <path d="M 28 46 L 42 56 L 28 66" stroke="#96bf48" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+          <line x1="48" y1="66" x2="68" y2="66" stroke="#ffffff" strokeWidth="5.5" strokeLinecap="round" />
+        </svg>
+      );
+
+    case 'shopify-apps':
+      return (
+        <svg viewBox="0 0 100 100" className={className}>
+          <rect width="100" height="100" rx="18" fill="#5c6ac4" />
+          {/* Shopify App / Extension Puzzle Block */}
+          <path
+            d="M 32 30 H 45 C 45 35 55 35 55 30 H 68 V 43 C 63 43 63 53 68 53 V 68 H 55 C 55 63 45 63 45 68 H 32 V 55 C 37 55 37 45 32 45 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      );
+
+    case 'storefront-api':
+      return (
+        <svg viewBox="0 0 100 100" className={className}>
+          <rect width="100" height="100" rx="18" fill="#171e26" />
+          {/* GraphQL / Storefront API geometric hexagon and nodes */}
+          <polygon
+            points="50,18 78,34 78,66 50,82 22,66 22,34"
+            fill="none"
+            stroke="#e535ab"
+            strokeWidth="3.5"
+          />
+          <polygon
+            points="50,26 71,63 29,63"
+            fill="none"
+            stroke="#e535ab"
+            strokeWidth="3"
+          />
+          <circle cx="50" cy="18" r="4.5" fill="#e535ab" />
+          <circle cx="78" cy="34" r="4.5" fill="#e535ab" />
+          <circle cx="78" cy="66" r="4.5" fill="#e535ab" />
+          <circle cx="50" cy="82" r="4.5" fill="#e535ab" />
+          <circle cx="22" cy="66" r="4.5" fill="#e535ab" />
+          <circle cx="22" cy="34" r="4.5" fill="#e535ab" />
+        </svg>
+      );
+
     case 'github':
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className={`${className} text-white`}>
@@ -330,7 +396,7 @@ export default function TechStack() {
             return s.category === 'backend' || s.id === 'firebase';
           }
           if (activeTab === 'tools') {
-            return s.category === 'tools' || s.id === 'git' || s.id === 'github';
+            return s.category === 'tools' || s.id === 'git' || s.id === 'github' || s.id === 'shopify-cli';
           }
           return s.category === activeTab;
         });
@@ -368,7 +434,7 @@ export default function TechStack() {
                     if (tab.id === 'shopify') return s.category === 'shopify' || s.id === 'liquid';
                     if (tab.id === 'frontend') return s.category === 'frontend' || s.id === 'liquid';
                     if (tab.id === 'backend') return s.category === 'backend' || s.id === 'firebase';
-                    if (tab.id === 'tools') return s.category === 'tools';
+                    if (tab.id === 'tools') return s.category === 'tools' || s.id === 'git' || s.id === 'github' || s.id === 'shopify-cli';
                     return s.category === tab.id;
                   }).length;
 
